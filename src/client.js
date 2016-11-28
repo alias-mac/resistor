@@ -1,13 +1,10 @@
+
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
-class ResistorCalculator extends React.Component {
-  render() {
-    return <h1>Hello World!</h1>;
-  }
-}
+import ResistorCalculator from './components/ResistorCalculator';
 
-ReactDom.render(
+ReactDOM.render(
   <ResistorCalculator />,
   document.getElementById('container')
 );
