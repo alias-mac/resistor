@@ -1,0 +1,171 @@
+exports[`Resistor should return list of multipliers 1`] = `
+Array [
+  Object {
+    "color": "black",
+    "value": 0,
+  },
+  Object {
+    "color": "brown",
+    "value": 1,
+  },
+  Object {
+    "color": "red",
+    "value": 2,
+  },
+  Object {
+    "color": "orange",
+    "value": 3,
+  },
+  Object {
+    "color": "yellow",
+    "value": 4,
+  },
+  Object {
+    "color": "green",
+    "value": 5,
+  },
+  Object {
+    "color": "blue",
+    "value": 6,
+  },
+  Object {
+    "color": "violet",
+    "value": 7,
+  },
+  Object {
+    "color": "gray",
+    "value": 8,
+  },
+  Object {
+    "color": "white",
+    "value": 9,
+  },
+  Object {
+    "color": "gold",
+    "value": -1,
+  },
+  Object {
+    "color": "silver",
+    "value": -2,
+  },
+]
+`;
+
+exports[`Resistor should return list of significant digits 1`] = `
+Array [
+  Object {
+    "color": "black",
+    "value": 0,
+  },
+  Object {
+    "color": "brown",
+    "value": 1,
+  },
+  Object {
+    "color": "red",
+    "value": 2,
+  },
+  Object {
+    "color": "orange",
+    "value": 3,
+  },
+  Object {
+    "color": "yellow",
+    "value": 4,
+  },
+  Object {
+    "color": "green",
+    "value": 5,
+  },
+  Object {
+    "color": "blue",
+    "value": 6,
+  },
+  Object {
+    "color": "violet",
+    "value": 7,
+  },
+  Object {
+    "color": "gray",
+    "value": 8,
+  },
+  Object {
+    "color": "white",
+    "value": 9,
+  },
+]
+`;
+
+exports[`Resistor should return list of temperature coefficients 1`] = `
+Array [
+  Object {
+    "color": "black",
+    "value": 250,
+  },
+  Object {
+    "color": "brown",
+    "value": 100,
+  },
+  Object {
+    "color": "red",
+    "value": 50,
+  },
+  Object {
+    "color": "orange",
+    "value": 15,
+  },
+  Object {
+    "color": "yellow",
+    "value": 25,
+  },
+  Object {
+    "color": "green",
+    "value": 20,
+  },
+  Object {
+    "color": "blue",
+    "value": 10,
+  },
+  Object {
+    "color": "violet",
+    "value": 5,
+  },
+  Object {
+    "color": "gray",
+    "value": 1,
+  },
+]
+`;
+
+exports[`Resistor should return list of tolerances 1`] = `
+Array [
+  Object {
+    "color": "brown",
+    "value": 1,
+  },
+  Object {
+    "color": "red",
+    "value": 2,
+  },
+  Object {
+    "color": "green",
+    "value": 0.5,
+  },
+  Object {
+    "color": "blue",
+    "value": 0.25,
+  },
+  Object {
+    "color": "violet",
+    "value": 0.1,
+  },
+  Object {
+    "color": "gold",
+    "value": 5,
+  },
+  Object {
+    "color": "silver",
+    "value": 10,
+  },
+]
+`;

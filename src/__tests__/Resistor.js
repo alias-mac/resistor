@@ -4,72 +4,97 @@ import Resistor from '../Resistor';
 describe('Resistor', function () {
 
   it('should return list of significant digits', function () {
-
-    const significantDigits = [
-      { value: 0, color: 'black' },
-      { value: 1, color: 'brown' },
-      { value: 2, color: 'red' },
-      { value: 3, color: 'orange' },
-      { value: 4, color: 'yellow' },
-      { value: 5, color: 'green' },
-      { value: 6, color: 'blue' },
-      { value: 7, color: 'violet' },
-      { value: 8, color: 'gray' },
-      { value: 9, color: 'white' },
-    ];
-
-    expect(Resistor.significantDigits).toEqual(significantDigits);
+    expect(Resistor.significantDigits).toMatchSnapshot();
   });
 
   it('should return list of multipliers', function () {
-
-    const multipliers = [
-      { value: 0, color: 'black' },
-      { value: 1, color: 'brown' },
-      { value: 2, color: 'red' },
-      { value: 3, color: 'orange' },
-      { value: 4, color: 'yellow' },
-      { value: 5, color: 'green' },
-      { value: 6, color: 'blue' },
-      { value: 7, color: 'violet' },
-      { value: 8, color: 'gray' },
-      { value: 9, color: 'white' },
-      { value: -1, color: 'gold' },
-      { value: -2, color: 'silver' },
-    ];
-
-    expect(Resistor.multipliers).toEqual(multipliers);
+    expect(Resistor.multipliers).toMatchSnapshot();
   });
 
   it('should return list of tolerances', function () {
-
-    const tolerances = [
-      { value: 1, color: 'brown' },
-      { value: 2, color: 'red' },
-      { value: 0.5, color: 'green' },
-      { value: 0.25, color: 'blue' },
-      { value: 0.1, color: 'violet' },
-      { value: 5, color: 'gold' },
-      { value: 10, color: 'silver' },
-    ];
-
-    expect(Resistor.tolerances).toEqual(tolerances);
+    expect(Resistor.tolerances).toMatchSnapshot();
   });
 
   it('should return list of temperature coefficients', function () {
+    expect(Resistor.tempCoefs).toMatchSnapshot();
+  });
 
-    const tempCoefs = [
-      { value: 250, color: 'black' },
-      { value: 100, color: 'brown' },
-      { value: 50, color: 'red' },
-      { value: 15, color: 'orange' },
-      { value: 25, color: 'yellow' },
-      { value: 20, color: 'green' },
-      { value: 10, color: 'blue' },
-      { value: 5, color: 'violet' },
-      { value: 1, color: 'gray' },
-    ];
+  describe('Constructor', function () {
 
-    expect(Resistor.tempCoefs).toEqual(tempCoefs);
+    it('should create a simple 3-band resistor', function () {
+      let resistor = new Resistor({
+        bands: 3,
+        digit1: 1,
+        digit2: 0,
+        multiplier: 0,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 3,
+        digit1: 1,
+        digit2: 0,
+        multiplier: 0,
+      });
+    });
+
+    it('should create a simple 4-band resistor', function () {
+      let resistor = new Resistor({
+        bands: 4,
+        digit1: 0,
+        digit2: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 4,
+        digit1: 0,
+        digit2: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+    });
+
+    it('should create a simple 5-band resistor', function () {
+      let resistor = new Resistor({
+        bands: 5,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 5,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+    });
+
+    it('should create a simple 6-band resistor', function () {
+      let resistor = new Resistor({
+        bands: 6,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+        tempCoef: 250,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 6,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+        tempCoef: 250,
+      });
+    });
   });
 });

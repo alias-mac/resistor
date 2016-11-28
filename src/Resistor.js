@@ -51,6 +51,32 @@ const tempCoefs = [
 ];
 
 class Resistor {
+
+  constructor(attributes) {
+    this.attributes = {};
+    this.set(attributes);
+  }
+
+  get() {
+    return this.attributes;
+  }
+
+  set(key, value) {
+    let attrs;
+    if (typeof key === 'object') {
+      attrs = key;
+    } else {
+      (attrs = {})[key] = value;
+    }
+
+    for (let attr in attrs) {
+      value = attrs[attr];
+      this.attributes[attr] = value;
+    }
+
+    return this;
+  }
+
   static get significantDigits() {
     return significantDigits;
   }
