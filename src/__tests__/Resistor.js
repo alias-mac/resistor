@@ -102,6 +102,7 @@ describe('Resistor', function () {
         digit1: 2,
         digit2: 3,
         multiplier: 0,
+        tolerance: 5,
       });
 
       expect(resistor.toOhms()).toBe(23);
@@ -111,6 +112,7 @@ describe('Resistor', function () {
         digit1: 3,
         digit2: 6,
         multiplier: 1,
+        tolerance: 5,
       });
 
       expect(resistor.toOhms()).toBe(360);
@@ -120,6 +122,7 @@ describe('Resistor', function () {
         digit1: 4,
         digit2: 8,
         multiplier: 3,
+        tolerance: 5,
       });
 
       expect(resistor.toOhms()).toBe(48000);
@@ -129,6 +132,7 @@ describe('Resistor', function () {
         digit1: 4,
         digit2: 8,
         multiplier: -2,
+        tolerance: 5,
       });
 
       expect(resistor.toOhms()).toBe(0.48);
@@ -144,7 +148,7 @@ describe('Resistor', function () {
         digit2: 0,
         digit3: 0,
         multiplier: 0,
-        tolerance: 5,
+        tolerance: 10,
       });
 
       expect(resistor.get()).toEqual({
@@ -153,7 +157,7 @@ describe('Resistor', function () {
         digit2: 0,
         digit3: 0,
         multiplier: 0,
-        tolerance: 5,
+        tolerance: 10,
       });
     });
 
@@ -164,6 +168,7 @@ describe('Resistor', function () {
         digit2: 2,
         digit3: 3,
         multiplier: 0,
+        tolerance: 10,
       });
 
       expect(resistor.toOhms()).toBe(123);
@@ -174,6 +179,7 @@ describe('Resistor', function () {
         digit2: 4,
         digit3: 5,
         multiplier: 6,
+        tolerance: 10,
       });
 
       expect(resistor.toOhms()).toBe(345000000);
@@ -184,6 +190,7 @@ describe('Resistor', function () {
         digit2: 8,
         digit3: 9,
         multiplier: 9,
+        tolerance: 10,
       });
 
       expect(resistor.toOhms()).toBe(789000000000);
@@ -194,6 +201,7 @@ describe('Resistor', function () {
         digit2: 8,
         digit3: 9,
         multiplier: -1,
+        tolerance: 10,
       });
 
       expect(resistor.toOhms()).toBe(78.9);
@@ -231,6 +239,8 @@ describe('Resistor', function () {
         digit2: 3,
         digit3: 0,
         multiplier: 0,
+        tolerance: 5,
+        tempCoef: 250,
       });
 
       expect(resistor.toOhms()).toBe(230);
@@ -241,6 +251,8 @@ describe('Resistor', function () {
         digit2: 6,
         digit3: 9,
         multiplier: 1,
+        tolerance: 5,
+        tempCoef: 250,
       });
 
       expect(resistor.toOhms()).toBe(3690);
@@ -251,6 +263,8 @@ describe('Resistor', function () {
         digit2: 8,
         digit3: 2,
         multiplier: 3,
+        tolerance: 5,
+        tempCoef: 250,
       });
 
       expect(resistor.toOhms()).toBe(482000);
@@ -261,6 +275,8 @@ describe('Resistor', function () {
         digit2: 8,
         digit3: 2,
         multiplier: -2,
+        tolerance: 5,
+        tempCoef: 250,
       });
 
       expect(resistor.toOhms()).toBe(4.82);
