@@ -19,9 +19,9 @@ describe('Resistor', function () {
     expect(Resistor.tempCoefs).toMatchSnapshot();
   });
 
-  describe('Constructor', function () {
+  describe('3-band resistor', function () {
 
-    it('should create a simple 3-band resistor', function () {
+    it('should create', function () {
       let resistor = new Resistor({
         bands: 3,
         digit1: 1,
@@ -37,69 +37,7 @@ describe('Resistor', function () {
       });
     });
 
-    it('should create a simple 4-band resistor', function () {
-      let resistor = new Resistor({
-        bands: 4,
-        digit1: 0,
-        digit2: 0,
-        multiplier: 0,
-        tolerance: 5,
-      });
-
-      expect(resistor.get()).toEqual({
-        bands: 4,
-        digit1: 0,
-        digit2: 0,
-        multiplier: 0,
-        tolerance: 5,
-      });
-    });
-
-    it('should create a simple 5-band resistor', function () {
-      let resistor = new Resistor({
-        bands: 5,
-        digit1: 0,
-        digit2: 0,
-        digit3: 0,
-        multiplier: 0,
-        tolerance: 5,
-      });
-
-      expect(resistor.get()).toEqual({
-        bands: 5,
-        digit1: 0,
-        digit2: 0,
-        digit3: 0,
-        multiplier: 0,
-        tolerance: 5,
-      });
-    });
-
-    it('should create a simple 6-band resistor', function () {
-      let resistor = new Resistor({
-        bands: 6,
-        digit1: 0,
-        digit2: 0,
-        digit3: 0,
-        multiplier: 0,
-        tolerance: 5,
-        tempCoef: 250,
-      });
-
-      expect(resistor.get()).toEqual({
-        bands: 6,
-        digit1: 0,
-        digit2: 0,
-        digit3: 0,
-        multiplier: 0,
-        tolerance: 5,
-        tempCoef: 250,
-      });
-    });
-  });
-
-  describe('toOhms', function () {
-    it('should calculate Ohms for a 3-band resistor', function () {
+    it('should calculate Ohms', function () {
       let resistor = new Resistor({
         bands: 3,
         digit1: 1,
@@ -136,8 +74,29 @@ describe('Resistor', function () {
 
       expect(resistor.toOhms()).toBe(1.3);
     });
+  });
 
-    it('should calculate Ohms for a 4-band resistor', function () {
+  describe('4-band resistor', function () {
+
+    it('should create', function () {
+      let resistor = new Resistor({
+        bands: 4,
+        digit1: 0,
+        digit2: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 4,
+        digit1: 0,
+        digit2: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+    });
+
+    it('should calculate Ohms', function () {
       let resistor = new Resistor({
         bands: 4,
         digit1: 2,
@@ -174,8 +133,31 @@ describe('Resistor', function () {
 
       expect(resistor.toOhms()).toBe(0.48);
     });
+  });
 
-    it('should calculate Ohms for a 5-band resistor', function () {
+  describe('5-band resistor', function () {
+
+    it('should create', function () {
+      let resistor = new Resistor({
+        bands: 5,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 5,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+      });
+    });
+
+    it('should calculate Ohms', function () {
       let resistor = new Resistor({
         bands: 5,
         digit1: 1,
@@ -216,8 +198,33 @@ describe('Resistor', function () {
 
       expect(resistor.toOhms()).toBe(78.9);
     });
+  });
 
-    it('should calculate Ohms for a 6-band resistor', function () {
+  describe('6-band resistor', function () {
+
+    it('should create', function () {
+      let resistor = new Resistor({
+        bands: 6,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+        tempCoef: 250,
+      });
+
+      expect(resistor.get()).toEqual({
+        bands: 6,
+        digit1: 0,
+        digit2: 0,
+        digit3: 0,
+        multiplier: 0,
+        tolerance: 5,
+        tempCoef: 250,
+      });
+    });
+
+    it('should calculate Ohms', function () {
       let resistor = new Resistor({
         bands: 6,
         digit1: 2,
