@@ -27,6 +27,7 @@ describe('Resistor', function () {
   });
 
   it('should allow edit and reuse of the same instance', function () {
+
     let resistor = new Resistor({
       bands: 3,
       digit1: 1,
@@ -34,24 +35,15 @@ describe('Resistor', function () {
       multiplier: 0,
     });
 
-    expect(resistor.get()).toEqual({
-      bands: 3,
-      digit1: 1,
-      digit2: 0,
-      multiplier: 0,
-    });
+    expect(resistor.get()).toMatchSnapshot();
 
     resistor.set('digit2', 3);
 
-    expect(resistor.get()).toEqual({
-      bands: 3,
-      digit1: 1,
-      digit2: 3,
-      multiplier: 0,
-    });
+    expect(resistor.get()).toMatchSnapshot();
   });
 
   it('should allow edit and keep old values', function () {
+
     let resistor = new Resistor({
       bands: 3,
       digit1: 1,
@@ -59,34 +51,59 @@ describe('Resistor', function () {
       multiplier: 0,
     });
 
-    expect(resistor.get()).toEqual({
-      bands: 3,
-      digit1: 1,
-      digit2: 0,
-      multiplier: 0,
-    });
+    expect(resistor.get()).toMatchSnapshot();
 
-    resistor.set({ bands: 5, digit3: 3, tolerance: 5 });
+    resistor.set({ bands: 6, digit3: 3, tolerance: 5, tempCoef: 25 });
 
-    expect(resistor.get()).toEqual({
-      bands: 5,
-      digit1: 1,
-      digit2: 0,
-      digit3: 3,
-      multiplier: 0,
-      tolerance: 5,
-    });
+    expect(resistor.get()).toMatchSnapshot();
 
     resistor.set({ bands: 3 });
 
-    expect(resistor.get()).toEqual({
+    expect(resistor.get()).toMatchSnapshot();
+
+    resistor.set({ bands: 6 });
+
+    expect(resistor.get()).toMatchSnapshot();
+  });
+
+  it('should sanitize properties to expected type', function () {
+
+    let resistor = new Resistor({
+      bands: "3",
+      digit1: "1",
+      digit2: "0",
+      multiplier: "0",
+    });
+
+    expect(resistor.get()).toMatchSnapshot();
+
+    resistor.set({ bands: "5", digit3: "3", tolerance: "5" });
+
+    expect(resistor.get()).toMatchSnapshot();
+  });
+
+  it('should set correct default tolerance when updating bands', function () {
+
+    let resistor = new Resistor({
       bands: 3,
       digit1: 1,
       digit2: 0,
-      digit3: 3,
       multiplier: 0,
-      tolerance: 5,
     });
+
+    // tolerance is ignored for 3-stripe resistors
+    expect(resistor.get('tolerance')).toBe(10);
+    expect(resistor.get('tempCoef')).toBe(250);
+
+    resistor.set('bands', 4);
+
+    expect(resistor.get('tolerance')).toBe(10);
+    expect(resistor.get('tempCoef')).toBe(250);
+
+    resistor.set('bands', 6);
+
+    expect(resistor.get('tolerance')).toBe(10);
+    expect(resistor.get('tempCoef')).toBe(250);
   });
 
   describe('3-band resistor', function () {
@@ -99,12 +116,7 @@ describe('Resistor', function () {
         multiplier: 0,
       });
 
-      expect(resistor.get()).toEqual({
-        bands: 3,
-        digit1: 1,
-        digit2: 0,
-        multiplier: 0,
-      });
+      expect(resistor.get()).toMatchSnapshot();
     });
 
     it('should calculate Ohms', function () {
@@ -157,13 +169,7 @@ describe('Resistor', function () {
         tolerance: 5,
       });
 
-      expect(resistor.get()).toEqual({
-        bands: 4,
-        digit1: 0,
-        digit2: 0,
-        multiplier: 0,
-        tolerance: 5,
-      });
+      expect(resistor.get()).toMatchSnapshot();
     });
 
     it('should calculate Ohms', function () {
@@ -221,14 +227,7 @@ describe('Resistor', function () {
         tolerance: 10,
       });
 
-      expect(resistor.get()).toEqual({
-        bands: 5,
-        digit1: 0,
-        digit2: 0,
-        digit3: 0,
-        multiplier: 0,
-        tolerance: 10,
-      });
+      expect(resistor.get()).toMatchSnapshot();
     });
 
     it('should calculate Ohms', function () {
@@ -288,18 +287,10 @@ describe('Resistor', function () {
         digit3: 0,
         multiplier: 0,
         tolerance: 5,
-        tempCoef: 250,
+        tempCoef: 15,
       });
 
-      expect(resistor.get()).toEqual({
-        bands: 6,
-        digit1: 0,
-        digit2: 0,
-        digit3: 0,
-        multiplier: 0,
-        tolerance: 5,
-        tempCoef: 250,
-      });
+      expect(resistor.get()).toMatchSnapshot();
     });
 
     it('should calculate Ohms', function () {

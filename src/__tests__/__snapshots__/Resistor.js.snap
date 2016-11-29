@@ -1,3 +1,123 @@
+exports[`Resistor 3-band resistor should create 1`] = `
+Object {
+  "bands": 3,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 10,
+}
+`;
+
+exports[`Resistor 4-band resistor should create 1`] = `
+Object {
+  "bands": 4,
+  "digit1": 0,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 5,
+}
+`;
+
+exports[`Resistor 5-band resistor should create 1`] = `
+Object {
+  "bands": 5,
+  "digit1": 0,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 10,
+}
+`;
+
+exports[`Resistor 6-band resistor should create 1`] = `
+Object {
+  "bands": 6,
+  "digit1": 0,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 15,
+  "tolerance": 5,
+}
+`;
+
+exports[`Resistor should allow edit and keep old values 1`] = `
+Object {
+  "bands": 3,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 10,
+}
+`;
+
+exports[`Resistor should allow edit and keep old values 2`] = `
+Object {
+  "bands": 6,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 3,
+  "multiplier": 0,
+  "tempCoef": 25,
+  "tolerance": 5,
+}
+`;
+
+exports[`Resistor should allow edit and keep old values 3`] = `
+Object {
+  "bands": 3,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 3,
+  "multiplier": 0,
+  "tempCoef": 25,
+  "tolerance": 5,
+}
+`;
+
+exports[`Resistor should allow edit and keep old values 4`] = `
+Object {
+  "bands": 6,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 3,
+  "multiplier": 0,
+  "tempCoef": 25,
+  "tolerance": 5,
+}
+`;
+
+exports[`Resistor should allow edit and reuse of the same instance 1`] = `
+Object {
+  "bands": 3,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 10,
+}
+`;
+
+exports[`Resistor should allow edit and reuse of the same instance 2`] = `
+Object {
+  "bands": 3,
+  "digit1": 1,
+  "digit2": 3,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 10,
+}
+`;
+
 exports[`Resistor should return list of multipliers 1`] = `
 Array [
   Object {
@@ -168,4 +288,28 @@ Array [
     "value": 10,
   },
 ]
+`;
+
+exports[`Resistor should sanitize properties to expected type 1`] = `
+Object {
+  "bands": 3,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 0,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 10,
+}
+`;
+
+exports[`Resistor should sanitize properties to expected type 2`] = `
+Object {
+  "bands": 5,
+  "digit1": 1,
+  "digit2": 0,
+  "digit3": 3,
+  "multiplier": 0,
+  "tempCoef": 250,
+  "tolerance": 5,
+}
 `;

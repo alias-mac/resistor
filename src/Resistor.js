@@ -57,6 +57,24 @@ const tempCoefs = [
   { value: 1, color: 'gray' },
 ];
 
+function sanitize(resistor) {
+
+  let attrs = resistor.attributes;
+
+  [
+    'bands',
+    'digit1',
+    'digit2',
+    'digit3',
+    'multiplier',
+  ].forEach((key) => {
+    attrs[key] = parseInt(attrs[key], 10) || 0;
+  });
+
+  attrs.tolerance = parseFloat(attrs.tolerance) || 10;
+  attrs.tempCoef = parseInt(attrs.tempCoef, 10) || 250;
+}
+
 class Resistor {
 
   constructor(attributes) {
@@ -80,6 +98,8 @@ class Resistor {
       value = attrs[attr];
       this.attributes[attr] = value;
     }
+
+    sanitize(this);
 
     return this;
   }
