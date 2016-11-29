@@ -57,8 +57,8 @@ class Resistor {
     this.set(attributes);
   }
 
-  get() {
-    return this.attributes;
+  get(key) {
+    return key ? this.attributes[key] : this.attributes;
   }
 
   set(key, value) {
@@ -75,6 +75,31 @@ class Resistor {
     }
 
     return this;
+  }
+
+  toOhms() {
+
+    let [d1, d2, d3, m] = [
+      this.get('digit1'),
+      this.get('digit2'),
+      this.get('digit3'),
+      this.get('multiplier')
+    ].map((int) => parseInt(int, 10) || 0);
+
+    switch (this.get('bands')) {
+      case 3:
+      case 4:
+        d1 *= 10;
+        break;
+      case 5:
+      case 6:
+        d1 *= 100;
+        d2 *= 10;
+        break;
+    }
+    let ohmage = d1 + d2 + d3;
+
+    return ohmage * Math.pow(10, m);
   }
 
   static get significantDigits() {
