@@ -19,6 +19,69 @@ describe('Resistor', function () {
     expect(Resistor.tempCoefs).toMatchSnapshot();
   });
 
+  it('should allow edit and reuse of the same instance', function () {
+    let resistor = new Resistor({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
+
+    expect(resistor.get()).toEqual({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
+
+    resistor.set('digit2', 3);
+
+    expect(resistor.get()).toEqual({
+      bands: 3,
+      digit1: 1,
+      digit2: 3,
+      multiplier: 0,
+    });
+  });
+
+  it('should allow edit and keep old values', function () {
+    let resistor = new Resistor({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
+
+    expect(resistor.get()).toEqual({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
+
+    resistor.set({ bands: 5, digit3: 3, tolerance: 5 });
+
+    expect(resistor.get()).toEqual({
+      bands: 5,
+      digit1: 1,
+      digit2: 0,
+      digit3: 3,
+      multiplier: 0,
+      tolerance: 5,
+    });
+
+    resistor.set({ bands: 3 });
+
+    expect(resistor.get()).toEqual({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      digit3: 3,
+      multiplier: 0,
+      tolerance: 5,
+    });
+  });
+
   describe('3-band resistor', function () {
 
     it('should create', function () {
