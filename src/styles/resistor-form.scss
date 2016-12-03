@@ -1,0 +1,68 @@
+@import "node_modules/bootstrap/scss/bootstrap-flex.scss";
+
+.resistor-form {
+
+  select {
+
+    &.black {
+      color: white;
+      background-color: black;
+    }
+
+    &.brown {
+      color: white;
+      background-color: brown;
+    }
+
+    &.red {
+      color: white;
+      background-color: red;
+    }
+
+    &.orange {
+      color: white;
+      background-color: orange;
+    }
+
+    &.yellow {
+      color: black;
+      background-color: yellow;
+    }
+
+    &.green {
+      color: white;
+      background-color: green;
+    }
+
+    &.blue {
+      color: white;
+      background-color: blue;
+    }
+
+    &.violet {
+      color: white;
+      background-color: violet;
+    }
+
+    &.gray {
+      color: white;
+      background-color: gray;
+    }
+
+    &.white {
+      color: black;
+      background-color: white;
+    }
+
+    &.gold {
+      color: white;
+      background-color: gold;
+    }
+
+    &.silver {
+      color: white;
+      background-color: silver;
+    }
+  }
+
+}
