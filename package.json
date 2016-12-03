@@ -33,7 +33,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot --config .config/webpack.config.js",
-    "build": "webpack --config .config/webpack.config.js"
+    "build": "webpack --config .config/webpack.config.js",
+    "test": "jest"
   },
   "jest": {
     "rootDir": "src",
