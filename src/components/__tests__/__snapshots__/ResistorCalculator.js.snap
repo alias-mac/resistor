@@ -337,6 +337,11 @@ exports[`ResistorCalculator should render with default state 1`] = `
       </div>
     </div>
   </form>
+  <p
+    className="resistor-value">
+    Resistance: 
+    10 Ω ± 10%
+  </p>
   <svg
     preserveAspectRatio="xMinYMin meet"
     viewBox="0 0 400 100"

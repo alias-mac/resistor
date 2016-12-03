@@ -108,4 +108,19 @@ describe('ResistorValue', function () {
     expect(longTree).toMatchSnapshot();
   });
 
+  it('should use the className supplied', function () {
+    let resistor = new Resistor({
+      bands: 4,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+      tolerance: 5,
+    });
+
+    const tree = renderer.create(
+      <ResistorValue className="my-resistor-class" model={resistor} />
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
 });
