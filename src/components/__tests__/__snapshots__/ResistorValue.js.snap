@@ -1,0 +1,55 @@
+exports[`ResistorValue should render a 3-band resistor 1`] = `
+<p>
+  Resistance: 
+  10 Ω ± 20%
+</p>
+`;
+
+exports[`ResistorValue should render a 3-band resistor 2`] = `
+<p>
+  Resistance: 
+  10 ohms ± 20%
+</p>
+`;
+
+exports[`ResistorValue should render a 4-band resistor 1`] = `
+<p>
+  Resistance: 
+  10 Ω ± 5%
+</p>
+`;
+
+exports[`ResistorValue should render a 4-band resistor 2`] = `
+<p>
+  Resistance: 
+  10 ohms ± 5%
+</p>
+`;
+
+exports[`ResistorValue should render a 5-band resistor 1`] = `
+<p>
+  Resistance: 
+  100 Ω ± 10%
+</p>
+`;
+
+exports[`ResistorValue should render a 5-band resistor 2`] = `
+<p>
+  Resistance: 
+  100 ohms ± 10%
+</p>
+`;
+
+exports[`ResistorValue should render a 6-band resistor 1`] = `
+<p>
+  Resistance: 
+  100 Ω ± 5% 15 ppm/K
+</p>
+`;
+
+exports[`ResistorValue should render a 6-band resistor 2`] = `
+<p>
+  Resistance: 
+  100 ohms ± 5% 15 ppm/K
+</p>
+`;
