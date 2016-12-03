@@ -10,6 +10,7 @@ import React from 'react';
 
 import Resistor from '../Resistor';
 import ResistorForm from './ResistorForm';
+import ResistorSvg from './ResistorSvg';
 
 import '../styles/resistor.scss';
 
@@ -36,7 +37,10 @@ class ResistorCalculator extends React.Component {
 
   render() {
     return (
-      <ResistorForm model={this.state.resistor} onChange={this.handleChange.bind(this)} />
+      <div>
+        <ResistorForm model={this.state.resistor} onChange={this.handleChange.bind(this)} />
+        <ResistorSvg model={this.state.resistor} />
+      </div>
     );
   }
 }
