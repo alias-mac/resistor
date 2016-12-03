@@ -8,9 +8,36 @@
 
 import React from 'react';
 
+import Resistor from '../Resistor';
+import ResistorForm from './ResistorForm';
+
+import '../styles/resistor.scss';
+
 class ResistorCalculator extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      resistor: new Resistor({
+        bands: 4,
+        digit1: 1,
+        digit2: 0,
+        multiplier: 0,
+      }),
+    };
+  }
+
+  handleChange(prop, value) {
+    let resistor = this.state.resistor;
+    resistor.set(prop, value);
+    this.setState({ resistor });
+  }
+
   render() {
-    return <h1>Hello World!</h1>;
+    return (
+      <ResistorForm model={this.state.resistor} onChange={this.handleChange.bind(this)} />
+    );
   }
 }
 

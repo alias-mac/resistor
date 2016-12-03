@@ -11,10 +11,12 @@ import ResistorCalculator from '../ResistorCalculator';
 import renderer from 'react-test-renderer';
 
 describe('ResistorCalculator', function () {
-  it('should render correctly', function () {
+
+  it('should render with default state', function () {
     const tree = renderer.create(
       <ResistorCalculator />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
 });
