@@ -7,10 +7,12 @@
  */
 
 import _includes from 'lodash/includes';
+import _find from 'lodash/find';
 
 import React from 'react';
 import Resistor from '../Resistor';
 
+import '../styles/resistor-form.scss';
 
 class BandSelector extends React.Component {
 
@@ -18,10 +20,13 @@ class BandSelector extends React.Component {
 
     let { options, label, value, ...other } = this.props;
 
+    // color is the mapping value or the first one of the list of options
+    let color = value ? _find(options, { value }).className : options[0].className;
+
     return (
-      <div>
+      <div className="form-group">
         <label>{label}</label>
-        <select {...other} value={value}>
+        <select {...other} value={value} className={`form-control ${color}`}>
           {options.map((option, i) => (
             <option key={option.value} {...option}>{option.label}</option>
           ))}
@@ -35,6 +40,7 @@ class BandSelector extends React.Component {
 function dropDownMapper(def) {
   return {
     value: def.value,
+    className: def.color,
     label: def.color,
   };
 }
@@ -65,7 +71,8 @@ class ResistorForm extends React.Component {
         <BandSelector key="digit3" name="digit3" label="3rd Digit"
           value={model.get('digit3')}
           options={digitOptions}
-          onChange={this._handleChange.bind(this)} />
+          onChange={this._handleChange.bind(this)}
+        />
       );
     }
 
@@ -112,16 +119,26 @@ class ResistorForm extends React.Component {
     }
 
     return (
-      <form {...other}>
-        <label>Strips</label>
-        <select name="bands"
-          value={model.get('bands')}
-          onChange={this._handleChange.bind(this)}>
-          {[3, 4, 5, 6].map((i) => (
-            <option key={i} value={i}>{i}-strip</option>
-          ))}
-        </select>
-        {bands}
+      <form className="resistor-form" {...other}>
+        <div className="row">
+          <div className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+            <label>Strips</label>
+            <select name="bands" className="form-control"
+              value={model.get('bands')}
+              onChange={this._handleChange.bind(this)}>
+              {[3, 4, 5, 6].map((i) => (
+                <option key={i} value={i}>{i}-strip</option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        <div className="row">
+          {bands.map((b, i) => {
+            let offset = i ? '' : ` offset-sm-${6 - model.get('bands')}`;
+            return (<div key={i} className={`col-xs-6 col-sm-2${offset}`}>{b}</div>);
+          })}
+        </div>
       </form>
     );
   }
