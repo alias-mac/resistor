@@ -131,6 +131,36 @@ class Resistor {
     return ohmage * Math.pow(10, m);
   }
 
+  toString({ short } = { short: true }) {
+
+    let result = this.toOhms();
+
+    let unit = short ? 'Ω' : (result === 1 ? 'ohm' : 'ohms');
+
+    let pow = '';
+    if (result >= 1e9) {
+      result /= 1e9;
+      pow = short ? 'G' : 'giga';
+    } else if (result >= 1e6) {
+      result /= 1e6;
+      pow = short ? 'M' : 'mega';
+    } else if (result >= 1e3) {
+      result /= 1e3;
+      pow = short ? 'K' : 'kilo';
+    }
+
+    let tolerance = this.get('tolerance');
+    if (this.get('bands') === 3) {
+      tolerance = 20;
+    }
+
+    let string = `${result} ${pow}${unit} ± ${tolerance}%`;
+    if (this.get('bands') === 6) {
+      string += ` ${this.get('tempCoef')} ppm/K`;
+    }
+    return string;
+  }
+
   static get significantDigits() {
     return significantDigits;
   }
