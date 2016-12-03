@@ -1,0 +1,273 @@
+exports[`ResistorSvg should render a 3-band resistor 1`] = `
+<svg
+  preserveAspectRatio="xMinYMin meet"
+  viewBox="0 0 400 100"
+  width="100%">
+  <defs>
+    <rect
+      fill="#d6d6d6"
+      height="100"
+      id="edge"
+      rx="10"
+      ry="10"
+      width="80" />
+    <rect
+      height="100%"
+      id="stripe-wide"
+      width="20" />
+    <rect
+      height="calc(100% - 20)"
+      id="stripe"
+      width="20"
+      y="10" />
+  </defs>
+  <rect
+    fill="#e8e8e8"
+    height="24"
+    width="100%"
+    x="0"
+    y="calc(50 - 12)" />
+  <rect
+    fill="#d6d6d6"
+    height="calc(100% - 20)"
+    width="calc(400 - 120)"
+    x="60"
+    y="10" />
+  <use
+    x="40"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    x="calc(100% - 120)"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    fill="brown"
+    id="stripe-1"
+    x="90"
+    xlinkHref="#stripe-wide" />
+  <use
+    fill="black"
+    id="stripe-2"
+    x="130"
+    xlinkHref="#stripe" />
+  <use
+    fill="black"
+    id="multiplier"
+    x="190"
+    xlinkHref="#stripe" />
+</svg>
+`;
+
+exports[`ResistorSvg should render a 4-band resistor 1`] = `
+<svg
+  preserveAspectRatio="xMinYMin meet"
+  viewBox="0 0 400 100"
+  width="100%">
+  <defs>
+    <rect
+      fill="#d6d6d6"
+      height="100"
+      id="edge"
+      rx="10"
+      ry="10"
+      width="80" />
+    <rect
+      height="100%"
+      id="stripe-wide"
+      width="20" />
+    <rect
+      height="calc(100% - 20)"
+      id="stripe"
+      width="20"
+      y="10" />
+  </defs>
+  <rect
+    fill="#e8e8e8"
+    height="24"
+    width="100%"
+    x="0"
+    y="calc(50 - 12)" />
+  <rect
+    fill="#d6d6d6"
+    height="calc(100% - 20)"
+    width="calc(400 - 120)"
+    x="60"
+    y="10" />
+  <use
+    x="40"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    x="calc(100% - 120)"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    fill="brown"
+    id="stripe-1"
+    x="90"
+    xlinkHref="#stripe-wide" />
+  <use
+    fill="black"
+    id="stripe-2"
+    x="130"
+    xlinkHref="#stripe" />
+  <use
+    fill="black"
+    id="multiplier"
+    x="190"
+    xlinkHref="#stripe" />
+  <use
+    fill="gold"
+    id="tolerance"
+    x="290"
+    xlinkHref="#stripe-wide" />
+</svg>
+`;
+
+exports[`ResistorSvg should render a 5-band resistor 1`] = `
+<svg
+  preserveAspectRatio="xMinYMin meet"
+  viewBox="0 0 400 100"
+  width="100%">
+  <defs>
+    <rect
+      fill="#d6d6d6"
+      height="100"
+      id="edge"
+      rx="10"
+      ry="10"
+      width="80" />
+    <rect
+      height="100%"
+      id="stripe-wide"
+      width="20" />
+    <rect
+      height="calc(100% - 20)"
+      id="stripe"
+      width="20"
+      y="10" />
+  </defs>
+  <rect
+    fill="#e8e8e8"
+    height="24"
+    width="100%"
+    x="0"
+    y="calc(50 - 12)" />
+  <rect
+    fill="#d6d6d6"
+    height="calc(100% - 20)"
+    width="calc(400 - 120)"
+    x="60"
+    y="10" />
+  <use
+    x="40"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    x="calc(100% - 120)"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    fill="brown"
+    id="stripe-1"
+    x="90"
+    xlinkHref="#stripe-wide" />
+  <use
+    fill="black"
+    id="stripe-2"
+    x="130"
+    xlinkHref="#stripe" />
+  <use
+    fill="black"
+    id="stripe-3"
+    x="160"
+    xlinkHref="#stripe" />
+  <use
+    fill="black"
+    id="multiplier"
+    x="190"
+    xlinkHref="#stripe" />
+  <use
+    fill="silver"
+    id="tolerance"
+    x="290"
+    xlinkHref="#stripe-wide" />
+</svg>
+`;
+
+exports[`ResistorSvg should render a 6-band resistor 1`] = `
+<svg
+  preserveAspectRatio="xMinYMin meet"
+  viewBox="0 0 400 100"
+  width="100%">
+  <defs>
+    <rect
+      fill="#d6d6d6"
+      height="100"
+      id="edge"
+      rx="10"
+      ry="10"
+      width="80" />
+    <rect
+      height="100%"
+      id="stripe-wide"
+      width="20" />
+    <rect
+      height="calc(100% - 20)"
+      id="stripe"
+      width="20"
+      y="10" />
+  </defs>
+  <rect
+    fill="#e8e8e8"
+    height="24"
+    width="100%"
+    x="0"
+    y="calc(50 - 12)" />
+  <rect
+    fill="#d6d6d6"
+    height="calc(100% - 20)"
+    width="calc(400 - 120)"
+    x="60"
+    y="10" />
+  <use
+    x="40"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    x="calc(100% - 120)"
+    xlinkHref="#edge"
+    y="0" />
+  <use
+    fill="brown"
+    id="stripe-1"
+    x="90"
+    xlinkHref="#stripe-wide" />
+  <use
+    fill="black"
+    id="stripe-2"
+    x="130"
+    xlinkHref="#stripe" />
+  <use
+    fill="black"
+    id="stripe-3"
+    x="160"
+    xlinkHref="#stripe" />
+  <use
+    fill="black"
+    id="multiplier"
+    x="190"
+    xlinkHref="#stripe" />
+  <use
+    fill="gold"
+    id="tolerance"
+    x="250"
+    xlinkHref="#stripe" />
+  <use
+    fill="orange"
+    id="temperature"
+    x="290"
+    xlinkHref="#stripe-wide" />
+</svg>
+`;

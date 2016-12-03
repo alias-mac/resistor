@@ -6,6 +6,8 @@
  * file that was distributed with this source code.
  */
 
+import _find from 'lodash/find';
+
 const significantDigits = [
   { value: 0, color: 'black' },
   { value: 1, color: 'brown' },
@@ -143,6 +145,26 @@ class Resistor {
 
   static get tempCoefs() {
     return tempCoefs;
+  }
+
+  static get tempCoefs() {
+    return tempCoefs;
+  }
+
+  static significantDigit(props) {
+    return _find(significantDigits, props);
+  }
+
+  static multiplier(props) {
+    return _find(multipliers, props);
+  }
+
+  static tolerance(props) {
+    return _find(tolerances, props);
+  }
+
+  static tempCoef(props) {
+    return _find(tempCoefs, props);
   }
 }
 
