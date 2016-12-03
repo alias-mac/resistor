@@ -12,7 +12,7 @@ import Resistor from '../Resistor';
 import ResistorForm from './ResistorForm';
 import ResistorSvg from './ResistorSvg';
 
-import '../styles/resistor.scss';
+import '../styles/resistor-calc.scss';
 
 class ResistorCalculator extends React.Component {
 
@@ -37,7 +37,9 @@ class ResistorCalculator extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="resistor-calc">
+        <h2>Resistor Calculator</h2>
+        <h4>Calculates values from color codes</h4>
         <ResistorForm model={this.state.resistor} onChange={this.handleChange.bind(this)} />
         <ResistorSvg model={this.state.resistor} />
       </div>

@@ -1,5 +1,12 @@
 exports[`ResistorCalculator should render with default state 1`] = `
-<div>
+<div
+  className="resistor-calc">
+  <h2>
+    Resistor Calculator
+  </h2>
+  <h4>
+    Calculates values from color codes
+  </h4>
   <form
     className="resistor-form"
     onChange={[Function]}>

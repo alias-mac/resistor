@@ -7,3 +7,17 @@
  */
 
 @import "node_modules/bootstrap/scss/bootstrap-flex.scss";
+
+.resistor-calc {
+  h2, h4 {
+    @extend .text-xs-center
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
