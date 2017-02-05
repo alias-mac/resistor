@@ -8,7 +8,7 @@
 
 import React from 'react';
 
-const ResistorSvg = React.createClass({
+class ResistorValue extends React.Component {
 
   render() {
 
@@ -17,7 +17,7 @@ const ResistorSvg = React.createClass({
     return (
       <p {...other}>Resistance: {model.toString(formatOptions)}</p>
     );
-  },
-});
+  }
+}
 
-export default ResistorSvg;
+export default ResistorValue;

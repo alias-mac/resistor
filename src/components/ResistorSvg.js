@@ -9,7 +9,7 @@
 import React from 'react';
 import Resistor from '../Resistor';
 
-const ResistorSvg = React.createClass({
+class ResistorSvg extends React.Component {
 
   render() {
 
@@ -59,7 +59,7 @@ const ResistorSvg = React.createClass({
         }
       </svg>
     );
-  },
-});
+  }
+}
 
 export default ResistorSvg;
