@@ -23,11 +23,11 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const tree = renderer.create(
+    const component = renderer.create(
       <ResistorForm model={resistor} />
-    ).toJSON();
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 4-band resistor', function () {
@@ -40,11 +40,11 @@ describe('ResistorForm', function () {
       tolerance: 5,
     });
 
-    const tree = renderer.create(
+    const component = renderer.create(
       <ResistorForm model={resistor} />
-    ).toJSON();
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 5-band resistor', function () {
@@ -57,12 +57,11 @@ describe('ResistorForm', function () {
       multiplier: 0,
       tolerance: 10,
     });
-
-    const tree = renderer.create(
+    const component = renderer.create(
       <ResistorForm model={resistor} />
-    ).toJSON();
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 6-band resistor', function () {
@@ -76,12 +75,10 @@ describe('ResistorForm', function () {
       tolerance: 5,
       tempCoef: 15,
     });
-
-    const tree = renderer.create(
+    const component = renderer.create(
       <ResistorForm model={resistor} />
-    ).toJSON();
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
-
 });
