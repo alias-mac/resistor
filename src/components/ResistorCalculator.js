@@ -8,12 +8,12 @@
 
 import React from 'react';
 
+import '../styles/resistor-calc.scss';
+
 import Resistor from '../Resistor';
 import ResistorForm from './ResistorForm';
 import ResistorValue from './ResistorValue';
 import ResistorSvg from './ResistorSvg';
-
-import '../styles/resistor-calc.scss';
 
 class ResistorCalculator extends React.Component {
 
