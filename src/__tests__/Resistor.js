@@ -398,6 +398,7 @@ describe('Resistor', function () {
         tolerance: 10,
       });
 
+      expect(resistor.toString()).toBe('345 MΩ ± 10%');
       expect(resistor.toString({ short: false })).toBe('345 megaohms ± 10%');
 
       resistor = new Resistor({
@@ -410,6 +411,7 @@ describe('Resistor', function () {
       });
 
       expect(resistor.toString()).toBe('789 GΩ ± 5%');
+      expect(resistor.toString({ short: false })).toBe('789 gigaohms ± 5%');
 
       resistor = new Resistor({
         bands: 5,
