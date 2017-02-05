@@ -359,7 +359,7 @@ exports[`ResistorCalculator should render with default state 1`] = `
         id="stripe-wide"
         width="20" />
       <rect
-        height="calc(100% - 20)"
+        height={80}
         id="stripe"
         width="20"
         y="10" />
@@ -369,11 +369,11 @@ exports[`ResistorCalculator should render with default state 1`] = `
       height="24"
       width="100%"
       x="0"
-      y="calc(50 - 12)" />
+      y={38} />
     <rect
       fill="#d6d6d6"
-      height="calc(100% - 20)"
-      width="calc(400 - 120)"
+      height={80}
+      width={280}
       x="60"
       y="10" />
     <use
@@ -381,7 +381,7 @@ exports[`ResistorCalculator should render with default state 1`] = `
       xlinkHref="#edge"
       y="0" />
     <use
-      x="calc(100% - 120)"
+      x={280}
       xlinkHref="#edge"
       y="0" />
     <use

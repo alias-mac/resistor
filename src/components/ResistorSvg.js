@@ -21,17 +21,17 @@ const ResistorSvg = React.createClass({
           <rect id="edge" rx="10" ry="10" width="80" height="100"
             fill="#d6d6d6" />
           <rect id="stripe-wide" width="20" height="100%" />
-          <rect id="stripe" y="10" width="20" height="calc(100% - 20)" />
+          <rect id="stripe" y="10" width="20" height={100 - 20} />
         </defs>
 
-        <rect x="0" y="calc(50 - 12)" width="100%" height="24"
+        <rect x="0" y={50 - 12} width="100%" height="24"
           fill="#e8e8e8" />
 
-        <rect x="60" y="10" width="calc(400 - 120)" height="calc(100% - 20)"
+        <rect x="60" y="10" width={400 - 120} height={100 - 20}
           fill="#d6d6d6" />
 
         <use xlinkHref="#edge" x="40" y="0" />
-        <use xlinkHref="#edge" x="calc(100% - 120)" y="0" />
+        <use xlinkHref="#edge" x={400 - 120} y="0" />
 
         <use id="stripe-1" xlinkHref="#stripe-wide" x="90"
           fill={Resistor.significantDigit({ value: model.get('digit1') }).color} />
