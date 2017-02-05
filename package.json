@@ -19,18 +19,18 @@
     "bootstrap": "4.0.0-alpha.5",
     "coveralls": "^2.11.15",
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
     "jest": "^18.1.0",
     "lodash": "^4.17.2",
     "node-sass": "^4.5.0",
-    "postcss-loader": "^1.1.1",
+    "postcss-loader": "^1.2.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-test-renderer": "^15.4.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
   },
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot --config .config/webpack.config.js",

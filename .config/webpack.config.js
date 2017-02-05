@@ -28,40 +28,52 @@ let config = {
   devtool: 'source-map',
 
   plugins: [
-    new ExtractTextPlugin('[name].css', { allChunks: false }),
+    new ExtractTextPlugin({ filename: '[name].css', allChunks: false }),
   ],
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
         include: [
           path.resolve(__dirname, '../src'),
         ],
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style-loader', [
-          `css-loader?${JSON.stringify({ sourceMap: true, minimize: true })}`,
-          'postcss-loader',
-          'sass-loader',
-        ]),
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: [
+            {
+              loader: 'css-loader',
+              query: {
+                sourceMap: true,
+                minimize: true,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: () => [
+                  require('autoprefixer')({ browsers: ['last 2 versions'] }),
+                ],
+              },
+            },
+            'sass-loader',
+          ],
+        })
       },
     ],
   },
 
-  postcss: [
-    require('autoprefixer')({
-      browsers: ['last 2 versions']
-    }),
-  ],
-
   resolve: {
-    root: path.resolve(__dirname, '../src'),
-    modulesDirectories: ['node_modules'],
-    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.json'],
+    modules: [
+      path.join(__dirname, '../src'),
+      'node_modules',
+    ],
+    extensions: ['.webpack.js', '.web.js', '.js', '.jsx', '.json'],
   },
 };
 
