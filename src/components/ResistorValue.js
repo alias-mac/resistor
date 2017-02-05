@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import Resistor from '../Resistor';
 
 class ResistorValue extends React.Component {
 
@@ -19,5 +20,11 @@ class ResistorValue extends React.Component {
     );
   }
 }
+
+ResistorValue.propTypes = {
+    model: React.PropTypes.instanceOf(Resistor).isRequired,
+    formatOptions: React.PropTypes.object,
+    other: React.PropTypes.object,
+};
 
 export default ResistorValue;

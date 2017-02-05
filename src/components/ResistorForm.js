@@ -34,8 +34,14 @@ class BandSelector extends React.Component {
       </div>
     );
   }
-
 }
+
+BandSelector.propTypes = {
+  options: React.PropTypes.array,
+  label: React.PropTypes.string,
+  value: React.PropTypes.number,
+  other: React.PropTypes.object,
+};
 
 function dropDownMapper(def) {
   return {
@@ -143,5 +149,11 @@ class ResistorForm extends React.Component {
     );
   }
 }
+
+ResistorForm.propTypes = {
+  model: React.PropTypes.instanceOf(Resistor).isRequired,
+  onChange: React.PropTypes.func,
+  other: React.PropTypes.object,
+};
 
 export default ResistorForm;

@@ -62,4 +62,9 @@ class ResistorSvg extends React.Component {
   }
 }
 
+ResistorSvg.propTypes = {
+    model: React.PropTypes.instanceOf(Resistor).isRequired,
+    other: React.PropTypes.object,
+};
+
 export default ResistorSvg;
