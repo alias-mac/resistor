@@ -153,7 +153,7 @@ class ResistorForm extends React.Component {
         <div className="row">
           {bands.map((b, i) => {
             const offset = i ? '' : ` offset-sm-${6 - model.get('bands')}`;
-            return (<div key={i} className={`col-xs-6 col-sm-2${offset}`}>{b}</div>);
+            return (<div key={b.key} className={`col-xs-6 col-sm-2${offset}`}>{b}</div>);
           })}
         </div>
       </form>
