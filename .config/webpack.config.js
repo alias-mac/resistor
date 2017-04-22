@@ -1,4 +1,11 @@
-const webpack = require('webpack');
+/*
+ * Copyright (c) 2016 Filipe Guerra
+ * https://github.com/alias-mac/resistor
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -20,7 +27,7 @@ let config = {
   },
 
   entry: {
-    app: ['./client.js']
+    app: ['./client.js'],
   },
 
   // Choose a developer tool to enhance debugging
