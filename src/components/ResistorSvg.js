@@ -37,7 +37,7 @@ class ResistorSvg extends React.Component {
           fill={Resistor.significantDigit({ value: model.get('digit1') }).color} />
         <use id="stripe-2" xlinkHref="#stripe" x="130"
           fill={Resistor.significantDigit({ value: model.get('digit2') }).color} />
-        {(model.get('bands') == 5 || model.get('bands') == 6) &&
+        {(model.get('bands') === 5 || model.get('bands') === 6) &&
           <use id="stripe-3" xlinkHref="#stripe" x="160"
             fill={Resistor.significantDigit({ value: model.get('digit3') }).color} />
         }
@@ -45,15 +45,15 @@ class ResistorSvg extends React.Component {
         <use id="multiplier" xlinkHref="#stripe" x="190"
           fill={Resistor.multiplier({ value: model.get('multiplier') }).color} />
 
-        {model.get('bands') != 6 && model.get('bands') != 3 &&
+        {model.get('bands') !== 6 && model.get('bands') !== 3 &&
           <use id="tolerance" xlinkHref="#stripe-wide" x="290"
             fill={Resistor.tolerance({ value: model.get('tolerance') }).color} />
         }
-        {model.get('bands') == 6 &&
+        {model.get('bands') === 6 &&
           <use id="tolerance" xlinkHref="#stripe" x="250"
             fill={Resistor.tolerance({ value: model.get('tolerance') }).color} />
         }
-        {model.get('bands') == 6 &&
+        {model.get('bands') === 6 &&
           <use id="temperature" xlinkHref="#stripe-wide" x="290"
             fill={Resistor.tempCoef({ value: model.get('tempCoef') }).color} />
         }
@@ -63,8 +63,8 @@ class ResistorSvg extends React.Component {
 }
 
 ResistorSvg.propTypes = {
-    model: React.PropTypes.instanceOf(Resistor).isRequired,
-    other: React.PropTypes.object,
+  model: React.PropTypes.instanceOf(Resistor).isRequired,
+  other: React.PropTypes.object,
 };
 
 export default ResistorSvg;

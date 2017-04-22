@@ -27,7 +27,7 @@ class BandSelector extends React.Component {
       <div className="form-group">
         <label>{label}</label>
         <select {...other} value={value} className={`form-control ${color}`}>
-          {options.map((option, i) => (
+          {options.map(option => (
             <option key={option.value} {...option}>{option.label}</option>
           ))}
         </select>
@@ -132,7 +132,7 @@ class ResistorForm extends React.Component {
             <select name="bands" className="form-control"
               value={model.get('bands')}
               onChange={this._handleChange.bind(this)}>
-              {[3, 4, 5, 6].map((i) => (
+              {[3, 4, 5, 6].map(i => (
                 <option key={i} value={i}>{i}-strip</option>
               ))}
             </select>

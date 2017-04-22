@@ -69,7 +69,7 @@ function sanitize(resistor) {
     'digit2',
     'digit3',
     'multiplier',
-  ].forEach((key) => {
+  ].forEach(key => {
     attrs[key] = parseInt(attrs[key], 10) || 0;
   });
 
@@ -113,7 +113,7 @@ class Resistor {
       this.get('digit2'),
       this.get('digit3'),
       this.get('multiplier'),
-    ].map((int) => parseInt(int, 10) || 0);
+    ].map(int => parseInt(int, 10) || 0);
 
     switch (this.get('bands')) {
       case 3:
@@ -172,10 +172,6 @@ class Resistor {
 
   static get tolerances() {
     return tolerances;
-  }
-
-  static get tempCoefs() {
-    return tempCoefs;
   }
 
   static get tempCoefs() {
