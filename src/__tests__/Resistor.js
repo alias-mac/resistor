@@ -69,15 +69,15 @@ describe('Resistor', function () {
   it('should sanitize properties to expected type', function () {
 
     let resistor = new Resistor({
-      bands: "3",
-      digit1: "1",
-      digit2: "0",
-      multiplier: "0",
+      bands: '3',
+      digit1: '1',
+      digit2: '0',
+      multiplier: '0',
     });
 
     expect(resistor.get()).toMatchSnapshot();
 
-    resistor.set({ bands: "5", digit3: "3", tolerance: "5" });
+    resistor.set({ bands: '5', digit3: '3', tolerance: '5' });
 
     expect(resistor.get()).toMatchSnapshot();
   });

@@ -96,7 +96,7 @@ class ResistorForm extends React.Component {
         value={model.get('multiplier')}
         options={multiplierOptions}
         onChange={this._handleChange.bind(this)}
-      />,
+      />
     );
 
     if (model.get('bands') !== 3) {

@@ -6,4 +6,4 @@
  * file that was distributed with this source code.
  */
 
-module.exports = {};
+export default {};

@@ -112,7 +112,7 @@ class Resistor {
       this.get('digit1'),
       this.get('digit2'),
       this.get('digit3'),
-      this.get('multiplier')
+      this.get('multiplier'),
     ].map((int) => parseInt(int, 10) || 0);
 
     switch (this.get('bands')) {
@@ -126,6 +126,7 @@ class Resistor {
         d2 *= 10;
         break;
     }
+
     let ohmage = d1 + d2 + d3;
 
     return ohmage * Math.pow(10, m);

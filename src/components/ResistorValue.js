@@ -17,7 +17,7 @@ const ResistorSvg = React.createClass({
     return (
       <p {...other}>Resistance: {model.toString(formatOptions)}</p>
     );
-  }
+  },
 });
 
 export default ResistorSvg;

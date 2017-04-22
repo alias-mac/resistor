@@ -59,7 +59,7 @@ const ResistorSvg = React.createClass({
         }
       </svg>
     );
-  }
+  },
 });
 
 export default ResistorSvg;
