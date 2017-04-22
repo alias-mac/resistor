@@ -50,7 +50,13 @@ function dropDownMapper(def) {
 
 class ResistorForm extends React.Component {
 
-  _handleChange(event) {
+  constructor(props) {
+    super(props);
+
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(event) {
     const selector = event.target;
     this.props.onChange(selector.name, selector.value);
   }
@@ -75,7 +81,7 @@ class ResistorForm extends React.Component {
           key="digit3" name="digit3" label="3rd Digit"
           value={model.get('digit3')}
           options={digitOptions}
-          onChange={this._handleChange.bind(this)}
+          onChange={this.onChange}
         />
       );
     }
@@ -86,13 +92,13 @@ class ResistorForm extends React.Component {
         key="digit1" name="digit1" label="1st Digit"
         value={model.get('digit1')}
         options={firstDigitOptions}
-        onChange={this._handleChange.bind(this)}
+        onChange={this.onChange}
       />,
       <BandSelector
         key="digit2" name="digit2" label="2nd Digit"
         value={model.get('digit2')}
         options={digitOptions}
-        onChange={this._handleChange.bind(this)}
+        onChange={this.onChange}
       />
     );
 
@@ -102,7 +108,7 @@ class ResistorForm extends React.Component {
         key="multiplier" name="multiplier" label="Multiplier"
         value={model.get('multiplier')}
         options={multiplierOptions}
-        onChange={this._handleChange.bind(this)}
+        onChange={this.onChange}
       />
     );
 
@@ -112,7 +118,7 @@ class ResistorForm extends React.Component {
           key="tolerance" name="tolerance" label="Tolerance"
           value={model.get('tolerance')}
           options={toleranceOptions}
-          onChange={this._handleChange.bind(this)}
+          onChange={this.onChange}
         />
       );
     }
@@ -122,7 +128,7 @@ class ResistorForm extends React.Component {
           key="tempCoef" name="tempCoef" label="Temp. Coef."
           value={model.get('tempCoef')}
           options={tempCoefsOptions}
-          onChange={this._handleChange.bind(this)}
+          onChange={this.onChange}
         />
       );
     }
@@ -135,7 +141,7 @@ class ResistorForm extends React.Component {
             <select
               name="bands" className="form-control"
               value={model.get('bands')}
-              onChange={this._handleChange.bind(this)}
+              onChange={this.onChange}
             >
               {[3, 4, 5, 6].map(i => (
                 <option key={i} value={i}>{i}-strip</option>

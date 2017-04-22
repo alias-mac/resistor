@@ -28,9 +28,11 @@ class ResistorCalculator extends React.Component {
         multiplier: 0,
       }),
     };
+
+    this.onChange = this.onChange.bind(this);
   }
 
-  handleChange(prop, value) {
+  onChange(prop, value) {
     const resistor = this.state.resistor;
     resistor.set(prop, value);
     this.setState({ resistor });
@@ -41,7 +43,7 @@ class ResistorCalculator extends React.Component {
       <div className="resistor-calc">
         <h2>Resistor Calculator</h2>
         <h4>Calculates values from color codes</h4>
-        <ResistorForm model={this.state.resistor} onChange={this.handleChange.bind(this)} />
+        <ResistorForm model={this.state.resistor} onChange={this.onChange} />
         <ResistorValue
           className="resistor-value" formatOptions={{ short: true }}
           model={this.state.resistor}
