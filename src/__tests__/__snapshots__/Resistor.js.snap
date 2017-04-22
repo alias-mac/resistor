@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Resistor 3-band resistor should create 1`] = `
 Object {
   "bands": 3,

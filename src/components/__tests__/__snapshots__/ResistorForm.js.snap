@@ -1,10 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`ResistorForm should render a 3-band resistor 1`] = `
 <form
-  className="resistor-form">
+  className="resistor-form"
+>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+    >
       <label>
         Strips
       </label>
@@ -12,24 +17,29 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
         className="form-control"
         name="bands"
         onChange={[Function]}
-        value={3}>
+        value={3}
+      >
         <option
-          value={3}>
+          value={3}
+        >
           3
           -strip
         </option>
         <option
-          value={4}>
+          value={4}
+        >
           4
           -strip
         </option>
         <option
-          value={5}>
+          value={5}
+        >
           5
           -strip
         </option>
         <option
-          value={6}>
+          value={6}
+        >
           6
           -strip
         </option>
@@ -37,11 +47,14 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
     </div>
   </div>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="col-xs-6 col-sm-2 offset-sm-3">
+      className="col-xs-6 col-sm-2 offset-sm-3"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           1st Digit
         </label>
@@ -49,68 +62,80 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
           className="form-control brown"
           name="digit1"
           onChange={[Function]}
-          value={1}>
+          value={1}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           2nd Digit
         </label>
@@ -118,74 +143,87 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
           className="form-control black"
           name="digit2"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Multiplier
         </label>
@@ -193,77 +231,90 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
           className="form-control black"
           name="multiplier"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
           <option
             className="gold"
             label="gold"
-            value={-1}>
+            value={-1}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={-2}>
+            value={-2}
+          >
             silver
           </option>
         </select>
@@ -275,11 +326,14 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
 
 exports[`ResistorForm should render a 4-band resistor 1`] = `
 <form
-  className="resistor-form">
+  className="resistor-form"
+>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+    >
       <label>
         Strips
       </label>
@@ -287,24 +341,29 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
         className="form-control"
         name="bands"
         onChange={[Function]}
-        value={4}>
+        value={4}
+      >
         <option
-          value={3}>
+          value={3}
+        >
           3
           -strip
         </option>
         <option
-          value={4}>
+          value={4}
+        >
           4
           -strip
         </option>
         <option
-          value={5}>
+          value={5}
+        >
           5
           -strip
         </option>
         <option
-          value={6}>
+          value={6}
+        >
           6
           -strip
         </option>
@@ -312,11 +371,14 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
     </div>
   </div>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="col-xs-6 col-sm-2 offset-sm-2">
+      className="col-xs-6 col-sm-2 offset-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           1st Digit
         </label>
@@ -324,68 +386,80 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
           className="form-control brown"
           name="digit1"
           onChange={[Function]}
-          value={1}>
+          value={1}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           2nd Digit
         </label>
@@ -393,74 +467,87 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
           className="form-control black"
           name="digit2"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Multiplier
         </label>
@@ -468,86 +555,101 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
           className="form-control black"
           name="multiplier"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
           <option
             className="gold"
             label="gold"
-            value={-1}>
+            value={-1}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={-2}>
+            value={-2}
+          >
             silver
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Tolerance
         </label>
@@ -555,47 +657,55 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
           className="form-control gold"
           name="tolerance"
           onChange={[Function]}
-          value={5}>
+          value={5}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="green"
             label="green"
-            value={0.5}>
+            value={0.5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={0.25}>
+            value={0.25}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={0.1}>
+            value={0.1}
+          >
             violet
           </option>
           <option
             className="gold"
             label="gold"
-            value={5}>
+            value={5}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={10}>
+            value={10}
+          >
             silver
           </option>
         </select>
@@ -607,11 +717,14 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
 
 exports[`ResistorForm should render a 5-band resistor 1`] = `
 <form
-  className="resistor-form">
+  className="resistor-form"
+>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+    >
       <label>
         Strips
       </label>
@@ -619,24 +732,29 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
         className="form-control"
         name="bands"
         onChange={[Function]}
-        value={5}>
+        value={5}
+      >
         <option
-          value={3}>
+          value={3}
+        >
           3
           -strip
         </option>
         <option
-          value={4}>
+          value={4}
+        >
           4
           -strip
         </option>
         <option
-          value={5}>
+          value={5}
+        >
           5
           -strip
         </option>
         <option
-          value={6}>
+          value={6}
+        >
           6
           -strip
         </option>
@@ -644,11 +762,14 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
     </div>
   </div>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="col-xs-6 col-sm-2 offset-sm-1">
+      className="col-xs-6 col-sm-2 offset-sm-1"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           1st Digit
         </label>
@@ -656,68 +777,80 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
           className="form-control brown"
           name="digit1"
           onChange={[Function]}
-          value={1}>
+          value={1}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           2nd Digit
         </label>
@@ -725,74 +858,87 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
           className="form-control black"
           name="digit2"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           3rd Digit
         </label>
@@ -800,74 +946,87 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
           className="form-control black"
           name="digit3"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Multiplier
         </label>
@@ -875,86 +1034,101 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
           className="form-control black"
           name="multiplier"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
           <option
             className="gold"
             label="gold"
-            value={-1}>
+            value={-1}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={-2}>
+            value={-2}
+          >
             silver
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Tolerance
         </label>
@@ -962,47 +1136,55 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
           className="form-control silver"
           name="tolerance"
           onChange={[Function]}
-          value={10}>
+          value={10}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="green"
             label="green"
-            value={0.5}>
+            value={0.5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={0.25}>
+            value={0.25}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={0.1}>
+            value={0.1}
+          >
             violet
           </option>
           <option
             className="gold"
             label="gold"
-            value={5}>
+            value={5}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={10}>
+            value={10}
+          >
             silver
           </option>
         </select>
@@ -1014,11 +1196,14 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
 
 exports[`ResistorForm should render a 6-band resistor 1`] = `
 <form
-  className="resistor-form">
+  className="resistor-form"
+>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+      className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+    >
       <label>
         Strips
       </label>
@@ -1026,24 +1211,29 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
         className="form-control"
         name="bands"
         onChange={[Function]}
-        value={6}>
+        value={6}
+      >
         <option
-          value={3}>
+          value={3}
+        >
           3
           -strip
         </option>
         <option
-          value={4}>
+          value={4}
+        >
           4
           -strip
         </option>
         <option
-          value={5}>
+          value={5}
+        >
           5
           -strip
         </option>
         <option
-          value={6}>
+          value={6}
+        >
           6
           -strip
         </option>
@@ -1051,11 +1241,14 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     </div>
   </div>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="col-xs-6 col-sm-2 offset-sm-0">
+      className="col-xs-6 col-sm-2 offset-sm-0"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           1st Digit
         </label>
@@ -1063,68 +1256,80 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           className="form-control brown"
           name="digit1"
           onChange={[Function]}
-          value={1}>
+          value={1}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           2nd Digit
         </label>
@@ -1132,74 +1337,87 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           className="form-control black"
           name="digit2"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           3rd Digit
         </label>
@@ -1207,74 +1425,87 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           className="form-control black"
           name="digit3"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Multiplier
         </label>
@@ -1282,86 +1513,101 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           className="form-control black"
           name="multiplier"
           onChange={[Function]}
-          value={0}>
+          value={0}
+        >
           <option
             className="black"
             label="black"
-            value={0}>
+            value={0}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={3}>
+            value={3}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={4}>
+            value={4}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={5}>
+            value={5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={6}>
+            value={6}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={7}>
+            value={7}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={8}>
+            value={8}
+          >
             gray
           </option>
           <option
             className="white"
             label="white"
-            value={9}>
+            value={9}
+          >
             white
           </option>
           <option
             className="gold"
             label="gold"
-            value={-1}>
+            value={-1}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={-2}>
+            value={-2}
+          >
             silver
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Tolerance
         </label>
@@ -1369,56 +1615,66 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           className="form-control gold"
           name="tolerance"
           onChange={[Function]}
-          value={5}>
+          value={5}
+        >
           <option
             className="brown"
             label="brown"
-            value={1}>
+            value={1}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={2}>
+            value={2}
+          >
             red
           </option>
           <option
             className="green"
             label="green"
-            value={0.5}>
+            value={0.5}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={0.25}>
+            value={0.25}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={0.1}>
+            value={0.1}
+          >
             violet
           </option>
           <option
             className="gold"
             label="gold"
-            value={5}>
+            value={5}
+          >
             gold
           </option>
           <option
             className="silver"
             label="silver"
-            value={10}>
+            value={10}
+          >
             silver
           </option>
         </select>
       </div>
     </div>
     <div
-      className="col-xs-6 col-sm-2">
+      className="col-xs-6 col-sm-2"
+    >
       <div
-        className="form-group">
+        className="form-group"
+      >
         <label>
           Temp. Coef.
         </label>
@@ -1426,59 +1682,69 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           className="form-control orange"
           name="tempCoef"
           onChange={[Function]}
-          value={15}>
+          value={15}
+        >
           <option
             className="black"
             label="black"
-            value={250}>
+            value={250}
+          >
             black
           </option>
           <option
             className="brown"
             label="brown"
-            value={100}>
+            value={100}
+          >
             brown
           </option>
           <option
             className="red"
             label="red"
-            value={50}>
+            value={50}
+          >
             red
           </option>
           <option
             className="orange"
             label="orange"
-            value={15}>
+            value={15}
+          >
             orange
           </option>
           <option
             className="yellow"
             label="yellow"
-            value={25}>
+            value={25}
+          >
             yellow
           </option>
           <option
             className="green"
             label="green"
-            value={20}>
+            value={20}
+          >
             green
           </option>
           <option
             className="blue"
             label="blue"
-            value={10}>
+            value={10}
+          >
             blue
           </option>
           <option
             className="violet"
             label="violet"
-            value={5}>
+            value={5}
+          >
             violet
           </option>
           <option
             className="gray"
             label="gray"
-            value={1}>
+            value={1}
+          >
             gray
           </option>
         </select>

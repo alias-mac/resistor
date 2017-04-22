@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`ResistorValue should render a 3-band resistor 1`] = `
 <p>
   Resistance: 
@@ -56,7 +58,8 @@ exports[`ResistorValue should render a 6-band resistor 2`] = `
 
 exports[`ResistorValue should use the className supplied 1`] = `
 <p
-  className="my-resistor-class">
+  className="my-resistor-class"
+>
   Resistance: 
   10 Ω ± 5%
 </p>

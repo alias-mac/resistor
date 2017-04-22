@@ -1,6 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`ResistorCalculator should render with default state 1`] = `
 <div
-  className="resistor-calc">
+  className="resistor-calc"
+>
   <h2>
     Resistor Calculator
   </h2>
@@ -9,11 +12,14 @@ exports[`ResistorCalculator should render with default state 1`] = `
   </h4>
   <form
     className="resistor-form"
-    onChange={[Function]}>
+    onChange={[Function]}
+  >
     <div
-      className="row">
+      className="row"
+    >
       <div
-        className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+        className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+      >
         <label>
           Strips
         </label>
@@ -21,24 +27,29 @@ exports[`ResistorCalculator should render with default state 1`] = `
           className="form-control"
           name="bands"
           onChange={[Function]}
-          value={4}>
+          value={4}
+        >
           <option
-            value={3}>
+            value={3}
+          >
             3
             -strip
           </option>
           <option
-            value={4}>
+            value={4}
+          >
             4
             -strip
           </option>
           <option
-            value={5}>
+            value={5}
+          >
             5
             -strip
           </option>
           <option
-            value={6}>
+            value={6}
+          >
             6
             -strip
           </option>
@@ -46,11 +57,14 @@ exports[`ResistorCalculator should render with default state 1`] = `
       </div>
     </div>
     <div
-      className="row">
+      className="row"
+    >
       <div
-        className="col-xs-6 col-sm-2 offset-sm-2">
+        className="col-xs-6 col-sm-2 offset-sm-2"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             1st Digit
           </label>
@@ -58,68 +72,80 @@ exports[`ResistorCalculator should render with default state 1`] = `
             className="form-control brown"
             name="digit1"
             onChange={[Function]}
-            value={1}>
+            value={1}
+          >
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="orange"
               label="orange"
-              value={3}>
+              value={3}
+            >
               orange
             </option>
             <option
               className="yellow"
               label="yellow"
-              value={4}>
+              value={4}
+            >
               yellow
             </option>
             <option
               className="green"
               label="green"
-              value={5}>
+              value={5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={6}>
+              value={6}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={7}>
+              value={7}
+            >
               violet
             </option>
             <option
               className="gray"
               label="gray"
-              value={8}>
+              value={8}
+            >
               gray
             </option>
             <option
               className="white"
               label="white"
-              value={9}>
+              value={9}
+            >
               white
             </option>
           </select>
         </div>
       </div>
       <div
-        className="col-xs-6 col-sm-2">
+        className="col-xs-6 col-sm-2"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             2nd Digit
           </label>
@@ -127,74 +153,87 @@ exports[`ResistorCalculator should render with default state 1`] = `
             className="form-control black"
             name="digit2"
             onChange={[Function]}
-            value={0}>
+            value={0}
+          >
             <option
               className="black"
               label="black"
-              value={0}>
+              value={0}
+            >
               black
             </option>
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="orange"
               label="orange"
-              value={3}>
+              value={3}
+            >
               orange
             </option>
             <option
               className="yellow"
               label="yellow"
-              value={4}>
+              value={4}
+            >
               yellow
             </option>
             <option
               className="green"
               label="green"
-              value={5}>
+              value={5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={6}>
+              value={6}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={7}>
+              value={7}
+            >
               violet
             </option>
             <option
               className="gray"
               label="gray"
-              value={8}>
+              value={8}
+            >
               gray
             </option>
             <option
               className="white"
               label="white"
-              value={9}>
+              value={9}
+            >
               white
             </option>
           </select>
         </div>
       </div>
       <div
-        className="col-xs-6 col-sm-2">
+        className="col-xs-6 col-sm-2"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             Multiplier
           </label>
@@ -202,86 +241,101 @@ exports[`ResistorCalculator should render with default state 1`] = `
             className="form-control black"
             name="multiplier"
             onChange={[Function]}
-            value={0}>
+            value={0}
+          >
             <option
               className="black"
               label="black"
-              value={0}>
+              value={0}
+            >
               black
             </option>
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="orange"
               label="orange"
-              value={3}>
+              value={3}
+            >
               orange
             </option>
             <option
               className="yellow"
               label="yellow"
-              value={4}>
+              value={4}
+            >
               yellow
             </option>
             <option
               className="green"
               label="green"
-              value={5}>
+              value={5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={6}>
+              value={6}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={7}>
+              value={7}
+            >
               violet
             </option>
             <option
               className="gray"
               label="gray"
-              value={8}>
+              value={8}
+            >
               gray
             </option>
             <option
               className="white"
               label="white"
-              value={9}>
+              value={9}
+            >
               white
             </option>
             <option
               className="gold"
               label="gold"
-              value={-1}>
+              value={-1}
+            >
               gold
             </option>
             <option
               className="silver"
               label="silver"
-              value={-2}>
+              value={-2}
+            >
               silver
             </option>
           </select>
         </div>
       </div>
       <div
-        className="col-xs-6 col-sm-2">
+        className="col-xs-6 col-sm-2"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             Tolerance
           </label>
@@ -289,47 +343,55 @@ exports[`ResistorCalculator should render with default state 1`] = `
             className="form-control silver"
             name="tolerance"
             onChange={[Function]}
-            value={10}>
+            value={10}
+          >
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="green"
               label="green"
-              value={0.5}>
+              value={0.5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={0.25}>
+              value={0.25}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={0.1}>
+              value={0.1}
+            >
               violet
             </option>
             <option
               className="gold"
               label="gold"
-              value={5}>
+              value={5}
+            >
               gold
             </option>
             <option
               className="silver"
               label="silver"
-              value={10}>
+              value={10}
+            >
               silver
             </option>
           </select>
@@ -338,14 +400,16 @@ exports[`ResistorCalculator should render with default state 1`] = `
     </div>
   </form>
   <p
-    className="resistor-value">
+    className="resistor-value"
+  >
     Resistance: 
     10 Ω ± 10%
   </p>
   <svg
     preserveAspectRatio="xMinYMin meet"
     viewBox="0 0 400 100"
-    width="100%">
+    width="100%"
+  >
     <defs>
       <rect
         fill="#d6d6d6"
@@ -353,64 +417,76 @@ exports[`ResistorCalculator should render with default state 1`] = `
         id="edge"
         rx="10"
         ry="10"
-        width="80" />
+        width="80"
+      />
       <rect
         height="100%"
         id="stripe-wide"
-        width="20" />
+        width="20"
+      />
       <rect
         height={80}
         id="stripe"
         width="20"
-        y="10" />
+        y="10"
+      />
     </defs>
     <rect
       fill="#e8e8e8"
       height="24"
       width="100%"
       x="0"
-      y={38} />
+      y={38}
+    />
     <rect
       fill="#d6d6d6"
       height={80}
       width={280}
       x="60"
-      y="10" />
+      y="10"
+    />
     <use
       x="40"
       xlinkHref="#edge"
-      y="0" />
+      y="0"
+    />
     <use
       x={280}
       xlinkHref="#edge"
-      y="0" />
+      y="0"
+    />
     <use
       fill="brown"
       id="stripe-1"
       x="90"
-      xlinkHref="#stripe-wide" />
+      xlinkHref="#stripe-wide"
+    />
     <use
       fill="black"
       id="stripe-2"
       x="130"
-      xlinkHref="#stripe" />
+      xlinkHref="#stripe"
+    />
     <use
       fill="black"
       id="multiplier"
       x="190"
-      xlinkHref="#stripe" />
+      xlinkHref="#stripe"
+    />
     <use
       fill="silver"
       id="tolerance"
       x="290"
-      xlinkHref="#stripe-wide" />
+      xlinkHref="#stripe-wide"
+    />
   </svg>
 </div>
 `;
 
 exports[`ResistorCalculator should update to 3-band resistor 1`] = `
 <div
-  className="resistor-calc">
+  className="resistor-calc"
+>
   <h2>
     Resistor Calculator
   </h2>
@@ -419,11 +495,14 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
   </h4>
   <form
     className="resistor-form"
-    onChange={[Function]}>
+    onChange={[Function]}
+  >
     <div
-      className="row">
+      className="row"
+    >
       <div
-        className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
+        className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+      >
         <label>
           Strips
         </label>
@@ -431,24 +510,29 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
           className="form-control"
           name="bands"
           onChange={[Function]}
-          value={3}>
+          value={3}
+        >
           <option
-            value={3}>
+            value={3}
+          >
             3
             -strip
           </option>
           <option
-            value={4}>
+            value={4}
+          >
             4
             -strip
           </option>
           <option
-            value={5}>
+            value={5}
+          >
             5
             -strip
           </option>
           <option
-            value={6}>
+            value={6}
+          >
             6
             -strip
           </option>
@@ -456,11 +540,14 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
       </div>
     </div>
     <div
-      className="row">
+      className="row"
+    >
       <div
-        className="col-xs-6 col-sm-2 offset-sm-3">
+        className="col-xs-6 col-sm-2 offset-sm-3"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             1st Digit
           </label>
@@ -468,68 +555,80 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
             className="form-control brown"
             name="digit1"
             onChange={[Function]}
-            value={1}>
+            value={1}
+          >
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="orange"
               label="orange"
-              value={3}>
+              value={3}
+            >
               orange
             </option>
             <option
               className="yellow"
               label="yellow"
-              value={4}>
+              value={4}
+            >
               yellow
             </option>
             <option
               className="green"
               label="green"
-              value={5}>
+              value={5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={6}>
+              value={6}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={7}>
+              value={7}
+            >
               violet
             </option>
             <option
               className="gray"
               label="gray"
-              value={8}>
+              value={8}
+            >
               gray
             </option>
             <option
               className="white"
               label="white"
-              value={9}>
+              value={9}
+            >
               white
             </option>
           </select>
         </div>
       </div>
       <div
-        className="col-xs-6 col-sm-2">
+        className="col-xs-6 col-sm-2"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             2nd Digit
           </label>
@@ -537,74 +636,87 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
             className="form-control black"
             name="digit2"
             onChange={[Function]}
-            value={0}>
+            value={0}
+          >
             <option
               className="black"
               label="black"
-              value={0}>
+              value={0}
+            >
               black
             </option>
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="orange"
               label="orange"
-              value={3}>
+              value={3}
+            >
               orange
             </option>
             <option
               className="yellow"
               label="yellow"
-              value={4}>
+              value={4}
+            >
               yellow
             </option>
             <option
               className="green"
               label="green"
-              value={5}>
+              value={5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={6}>
+              value={6}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={7}>
+              value={7}
+            >
               violet
             </option>
             <option
               className="gray"
               label="gray"
-              value={8}>
+              value={8}
+            >
               gray
             </option>
             <option
               className="white"
               label="white"
-              value={9}>
+              value={9}
+            >
               white
             </option>
           </select>
         </div>
       </div>
       <div
-        className="col-xs-6 col-sm-2">
+        className="col-xs-6 col-sm-2"
+      >
         <div
-          className="form-group">
+          className="form-group"
+        >
           <label>
             Multiplier
           </label>
@@ -612,77 +724,90 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
             className="form-control black"
             name="multiplier"
             onChange={[Function]}
-            value={0}>
+            value={0}
+          >
             <option
               className="black"
               label="black"
-              value={0}>
+              value={0}
+            >
               black
             </option>
             <option
               className="brown"
               label="brown"
-              value={1}>
+              value={1}
+            >
               brown
             </option>
             <option
               className="red"
               label="red"
-              value={2}>
+              value={2}
+            >
               red
             </option>
             <option
               className="orange"
               label="orange"
-              value={3}>
+              value={3}
+            >
               orange
             </option>
             <option
               className="yellow"
               label="yellow"
-              value={4}>
+              value={4}
+            >
               yellow
             </option>
             <option
               className="green"
               label="green"
-              value={5}>
+              value={5}
+            >
               green
             </option>
             <option
               className="blue"
               label="blue"
-              value={6}>
+              value={6}
+            >
               blue
             </option>
             <option
               className="violet"
               label="violet"
-              value={7}>
+              value={7}
+            >
               violet
             </option>
             <option
               className="gray"
               label="gray"
-              value={8}>
+              value={8}
+            >
               gray
             </option>
             <option
               className="white"
               label="white"
-              value={9}>
+              value={9}
+            >
               white
             </option>
             <option
               className="gold"
               label="gold"
-              value={-1}>
+              value={-1}
+            >
               gold
             </option>
             <option
               className="silver"
               label="silver"
-              value={-2}>
+              value={-2}
+            >
               silver
             </option>
           </select>
@@ -691,14 +816,16 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
     </div>
   </form>
   <p
-    className="resistor-value">
+    className="resistor-value"
+  >
     Resistance: 
     10 Ω ± 20%
   </p>
   <svg
     preserveAspectRatio="xMinYMin meet"
     viewBox="0 0 400 100"
-    width="100%">
+    width="100%"
+  >
     <defs>
       <rect
         fill="#d6d6d6"
@@ -706,52 +833,62 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
         id="edge"
         rx="10"
         ry="10"
-        width="80" />
+        width="80"
+      />
       <rect
         height="100%"
         id="stripe-wide"
-        width="20" />
+        width="20"
+      />
       <rect
         height={80}
         id="stripe"
         width="20"
-        y="10" />
+        y="10"
+      />
     </defs>
     <rect
       fill="#e8e8e8"
       height="24"
       width="100%"
       x="0"
-      y={38} />
+      y={38}
+    />
     <rect
       fill="#d6d6d6"
       height={80}
       width={280}
       x="60"
-      y="10" />
+      y="10"
+    />
     <use
       x="40"
       xlinkHref="#edge"
-      y="0" />
+      y="0"
+    />
     <use
       x={280}
       xlinkHref="#edge"
-      y="0" />
+      y="0"
+    />
     <use
       fill="brown"
       id="stripe-1"
       x="90"
-      xlinkHref="#stripe-wide" />
+      xlinkHref="#stripe-wide"
+    />
     <use
       fill="black"
       id="stripe-2"
       x="130"
-      xlinkHref="#stripe" />
+      xlinkHref="#stripe"
+    />
     <use
       fill="black"
       id="multiplier"
       x="190"
-      xlinkHref="#stripe" />
+      xlinkHref="#stripe"
+    />
   </svg>
 </div>
 `;
