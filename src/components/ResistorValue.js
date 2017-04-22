@@ -22,7 +22,10 @@ function ResistorValue(props) {
 ResistorValue.propTypes = {
   model: React.PropTypes.instanceOf(Resistor).isRequired,
   formatOptions: React.PropTypes.object,
-  other: React.PropTypes.object,
+};
+
+ResistorValue.defautProps = {
+  formatOptions: {},
 };
 
 export default ResistorValue;

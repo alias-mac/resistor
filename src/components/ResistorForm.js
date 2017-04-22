@@ -34,10 +34,9 @@ function BandSelector(props) {
 }
 
 BandSelector.propTypes = {
-  options: React.PropTypes.array,
-  label: React.PropTypes.string,
-  value: React.PropTypes.number,
-  other: React.PropTypes.object,
+  options: React.PropTypes.array.isRequired,
+  label: React.PropTypes.string.isRequired,
+  value: React.PropTypes.number.isRequired,
 };
 
 function dropDownMapper(def) {
