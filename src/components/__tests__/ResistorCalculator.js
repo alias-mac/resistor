@@ -7,11 +7,11 @@
  */
 
 import React from 'react';
-import ResistorCalculator from '../ResistorCalculator';
 import renderer from 'react-test-renderer';
 
-describe('ResistorCalculator', function () {
+import ResistorCalculator from '../ResistorCalculator';
 
+describe('ResistorCalculator', function () {
   it('should render with default state', function () {
     const component = renderer.create(
       <ResistorCalculator />
@@ -24,7 +24,7 @@ describe('ResistorCalculator', function () {
       <ResistorCalculator />
     );
 
-    let form = component.toJSON().children.find((c) => c.type === 'form');
+    let form = component.toJSON().children.find(c => c.type === 'form');
     form.props.onChange('bands', '3');
 
     expect(component.toJSON()).toMatchSnapshot();
