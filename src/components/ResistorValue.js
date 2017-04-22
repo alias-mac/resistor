@@ -9,15 +9,14 @@
 import React from 'react';
 import Resistor from '../Resistor';
 
-class ResistorValue extends React.Component {
+function ResistorValue(props) {
 
-  render() {
-    const { formatOptions, model, ...other } = this.props;
+  const { formatOptions, model, ...other } = props;
 
-    return (
-      <p {...other}>Resistance: {model.toString(formatOptions)}</p>
-    );
-  }
+  return (
+    <p {...other}>Resistance: {model.toString(formatOptions)}</p>
+  );
+
 }
 
 ResistorValue.propTypes = {

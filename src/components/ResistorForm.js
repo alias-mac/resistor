@@ -14,25 +14,23 @@ import Resistor from '../Resistor';
 
 import '../styles/resistor-form.scss';
 
-class BandSelector extends React.Component {
+function BandSelector(props) {
 
-  render() {
-    const { options, label, value, ...other } = this.props;
+  const { options, label, value, ...other } = props;
 
-    // color is the mapping value or the first one of the list of options
-    const color = value ? _find(options, { value }).className : options[0].className;
+  // color is the mapping value or the first one of the list of options
+  const color = value ? _find(options, { value }).className : options[0].className;
 
-    return (
-      <div className="form-group">
-        <label>{label}</label>
-        <select {...other} value={value} className={`form-control ${color}`}>
-          {options.map(option => (
-            <option key={option.value} {...option}>{option.label}</option>
-          ))}
-        </select>
-      </div>
-    );
-  }
+  return (
+    <div className="form-group">
+      <label>{label}</label>
+      <select {...other} value={value} className={`form-control ${color}`}>
+        {options.map(option => (
+          <option key={option.value} {...option}>{option.label}</option>
+        ))}
+      </select>
+    </div>
+  );
 }
 
 BandSelector.propTypes = {
@@ -148,7 +146,7 @@ class ResistorForm extends React.Component {
 
         <div className="row">
           {bands.map((b, i) => {
-            let offset = i ? '' : ` offset-sm-${6 - model.get('bands')}`;
+            const offset = i ? '' : ` offset-sm-${6 - model.get('bands')}`;
             return (<div key={i} className={`col-xs-6 col-sm-2${offset}`}>{b}</div>);
           })}
         </div>
