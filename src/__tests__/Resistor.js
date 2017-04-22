@@ -28,7 +28,7 @@ describe('Resistor', function () {
 
   it('should allow edit and reuse of the same instance', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 3,
       digit1: 1,
       digit2: 0,
@@ -44,7 +44,7 @@ describe('Resistor', function () {
 
   it('should allow edit and keep old values', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 3,
       digit1: 1,
       digit2: 0,
@@ -68,7 +68,7 @@ describe('Resistor', function () {
 
   it('should sanitize properties to expected type', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: '3',
       digit1: '1',
       digit2: '0',
@@ -84,7 +84,7 @@ describe('Resistor', function () {
 
   it('should set correct default tolerance when updating bands', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 3,
       digit1: 1,
       digit2: 0,
@@ -109,7 +109,7 @@ describe('Resistor', function () {
   describe('3-band resistor', function () {
 
     it('should create', function () {
-      let resistor = new Resistor({
+      const resistor = new Resistor({
         bands: 3,
         digit1: 1,
         digit2: 0,
@@ -199,7 +199,7 @@ describe('Resistor', function () {
   describe('4-band resistor', function () {
 
     it('should create', function () {
-      let resistor = new Resistor({
+      const resistor = new Resistor({
         bands: 4,
         digit1: 0,
         digit2: 0,
@@ -319,7 +319,7 @@ describe('Resistor', function () {
   describe('5-band resistor', function () {
 
     it('should create', function () {
-      let resistor = new Resistor({
+      const resistor = new Resistor({
         bands: 5,
         digit1: 0,
         digit2: 0,
@@ -429,7 +429,7 @@ describe('Resistor', function () {
   describe('6-band resistor', function () {
 
     it('should create', function () {
-      let resistor = new Resistor({
+      const resistor = new Resistor({
         bands: 6,
         digit1: 0,
         digit2: 0,

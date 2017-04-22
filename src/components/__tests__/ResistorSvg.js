@@ -16,7 +16,7 @@ describe('ResistorSvg', function () {
 
   it('should render a 3-band resistor', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 3,
       digit1: 1,
       digit2: 0,
@@ -32,7 +32,7 @@ describe('ResistorSvg', function () {
 
   it('should render a 4-band resistor', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 4,
       digit1: 1,
       digit2: 0,
@@ -49,7 +49,7 @@ describe('ResistorSvg', function () {
 
   it('should render a 5-band resistor', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 5,
       digit1: 1,
       digit2: 0,
@@ -67,7 +67,7 @@ describe('ResistorSvg', function () {
 
   it('should render a 6-band resistor', function () {
 
-    let resistor = new Resistor({
+    const resistor = new Resistor({
       bands: 6,
       digit1: 1,
       digit2: 0,

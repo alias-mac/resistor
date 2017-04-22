@@ -12,8 +12,7 @@ import Resistor from '../Resistor';
 class ResistorValue extends React.Component {
 
   render() {
-
-    let { formatOptions, model, ...other } = this.props;
+    const { formatOptions, model, ...other } = this.props;
 
     return (
       <p {...other}>Resistance: {model.toString(formatOptions)}</p>

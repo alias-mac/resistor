@@ -17,11 +17,10 @@ import '../styles/resistor-form.scss';
 class BandSelector extends React.Component {
 
   render() {
-
-    let { options, label, value, ...other } = this.props;
+    const { options, label, value, ...other } = this.props;
 
     // color is the mapping value or the first one of the list of options
-    let color = value ? _find(options, { value }).className : options[0].className;
+    const color = value ? _find(options, { value }).className : options[0].className;
 
     return (
       <div className="form-group">
@@ -54,27 +53,28 @@ function dropDownMapper(def) {
 class ResistorForm extends React.Component {
 
   _handleChange(event) {
-    let selector = event.target;
+    const selector = event.target;
     this.props.onChange(selector.name, selector.value);
   }
 
   render() {
-    let { model, ...other } = this.props;
+    const { model, ...other } = this.props;
 
-    let digitOptions = Resistor.significantDigits.map(dropDownMapper);
-    let multiplierOptions = Resistor.multipliers.map(dropDownMapper);
-    let toleranceOptions = Resistor.tolerances.map(dropDownMapper);
-    let tempCoefsOptions = Resistor.tempCoefs.map(dropDownMapper);
+    const digitOptions = Resistor.significantDigits.map(dropDownMapper);
+    const multiplierOptions = Resistor.multipliers.map(dropDownMapper);
+    const toleranceOptions = Resistor.tolerances.map(dropDownMapper);
+    const tempCoefsOptions = Resistor.tempCoefs.map(dropDownMapper);
 
     // normally the first digit isn't 0 (aka black) only if we have 0 ohms...
-    let [, ...firstDigitOptions] = digitOptions;
+    const [, ...firstDigitOptions] = digitOptions;
 
-    let bands = [];
+    const bands = [];
 
     // only 5 and 6 has 3rd digit
     if (_includes([5, 6], model.get('bands'))) {
       bands.push(
-        <BandSelector key="digit3" name="digit3" label="3rd Digit"
+        <BandSelector
+          key="digit3" name="digit3" label="3rd Digit"
           value={model.get('digit3')}
           options={digitOptions}
           onChange={this._handleChange.bind(this)}
@@ -84,12 +84,14 @@ class ResistorForm extends React.Component {
 
     // all have at least 2 first digits
     bands.unshift(
-      <BandSelector key="digit1" name="digit1" label="1st Digit"
+      <BandSelector
+        key="digit1" name="digit1" label="1st Digit"
         value={model.get('digit1')}
         options={firstDigitOptions}
         onChange={this._handleChange.bind(this)}
       />,
-      <BandSelector key="digit2" name="digit2" label="2nd Digit"
+      <BandSelector
+        key="digit2" name="digit2" label="2nd Digit"
         value={model.get('digit2')}
         options={digitOptions}
         onChange={this._handleChange.bind(this)}
@@ -98,7 +100,8 @@ class ResistorForm extends React.Component {
 
     // all have multiplier
     bands.push(
-      <BandSelector key="multiplier" name="multiplier" label="Multiplier"
+      <BandSelector
+        key="multiplier" name="multiplier" label="Multiplier"
         value={model.get('multiplier')}
         options={multiplierOptions}
         onChange={this._handleChange.bind(this)}
@@ -107,7 +110,8 @@ class ResistorForm extends React.Component {
 
     if (model.get('bands') !== 3) {
       bands.push(
-        <BandSelector key="tolerance" name="tolerance" label="Tolerance"
+        <BandSelector
+          key="tolerance" name="tolerance" label="Tolerance"
           value={model.get('tolerance')}
           options={toleranceOptions}
           onChange={this._handleChange.bind(this)}
@@ -116,7 +120,8 @@ class ResistorForm extends React.Component {
     }
     if (model.get('bands') === 6) {
       bands.push(
-        <BandSelector key="tempCoef" name="tempCoef" label="Temp. Coef."
+        <BandSelector
+          key="tempCoef" name="tempCoef" label="Temp. Coef."
           value={model.get('tempCoef')}
           options={tempCoefsOptions}
           onChange={this._handleChange.bind(this)}
@@ -129,9 +134,11 @@ class ResistorForm extends React.Component {
         <div className="row">
           <div className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
             <label>Strips</label>
-            <select name="bands" className="form-control"
+            <select
+              name="bands" className="form-control"
               value={model.get('bands')}
-              onChange={this._handleChange.bind(this)}>
+              onChange={this._handleChange.bind(this)}
+            >
               {[3, 4, 5, 6].map(i => (
                 <option key={i} value={i}>{i}-strip</option>
               ))}

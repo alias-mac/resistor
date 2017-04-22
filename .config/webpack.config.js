@@ -9,7 +9,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-let config = {
+const config = {
   context: path.resolve(__dirname, '../src'),
 
   output: {

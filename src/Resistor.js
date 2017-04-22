@@ -60,8 +60,7 @@ const tempCoefs = [
 ];
 
 function sanitize(resistor) {
-
-  let attrs = resistor.attributes;
+  const attrs = resistor.attributes;
 
   [
     'bands',
@@ -69,7 +68,7 @@ function sanitize(resistor) {
     'digit2',
     'digit3',
     'multiplier',
-  ].forEach(key => {
+  ].forEach((key) => {
     attrs[key] = parseInt(attrs[key], 10) || 0;
   });
 
@@ -127,16 +126,16 @@ class Resistor {
         break;
     }
 
-    let ohmage = d1 + d2 + d3;
+    const ohmage = d1 + d2 + d3;
 
-    return ohmage * Math.pow(10, m);
+    return ohmage * (10 ** m); // Ω * 10^m
   }
 
   toString({ short } = { short: true }) {
 
     let result = this.toOhms();
 
-    let unit = short ? 'Ω' : (result === 1 ? 'ohm' : 'ohms');
+    const unit = short ? 'Ω' : (result === 1 ? 'ohm' : 'ohms');
 
     let pow = '';
     if (result >= 1e9) {

@@ -24,7 +24,7 @@ describe('ResistorCalculator', function () {
       <ResistorCalculator />
     );
 
-    let form = component.toJSON().children.find(c => c.type === 'form');
+    const form = component.toJSON().children.find(c => c.type === 'form');
     form.props.onChange('bands', '3');
 
     expect(component.toJSON()).toMatchSnapshot();
