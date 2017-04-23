@@ -12,6 +12,21 @@ import renderer from 'react-test-renderer';
 import Resistor from '../../Resistor';
 import ResistorForm from '../ResistorForm';
 
+function find(arr, func) {
+  let found = arr.find(func);
+
+  if (!found) {
+    for (const c of arr) {
+      found = find(c.children, func);
+      if (found) {
+        return found;
+      }
+    }
+  }
+
+  return found;
+}
+
 describe('ResistorForm', function () {
 
   it('should render a 3-band resistor', function () {
@@ -80,5 +95,43 @@ describe('ResistorForm', function () {
     );
 
     expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('should call callback onChange', function () {
+
+    const onChange = jest.fn();
+
+    const resistor = new Resistor({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
+
+    const component = renderer.create(
+      <ResistorForm model={resistor} onChange={onChange} />
+    );
+
+    const bands = find(component.toJSON().children, c => c.props.name === 'bands');
+    bands.props.onChange({ target: { name: 'bands', value: '5' } });
+
+    expect(onChange).toHaveBeenCalledWith('bands', '5');
+  });
+
+  it('should not break if callback onChange is not defined', function () {
+
+    const resistor = new Resistor({
+      bands: 3,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
+
+    const component = renderer.create(
+      <ResistorForm model={resistor} />
+    );
+
+    const bands = find(component.toJSON().children, c => c.props.name === 'bands');
+    bands.props.onChange({ target: { name: 'bands', value: '5' } });
   });
 });
