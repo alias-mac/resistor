@@ -55,11 +55,11 @@ class ResistorCalculator extends React.Component {
 }
 
 ResistorCalculator.propTypes = {
-  form: React.PropTypes.func
+  form: React.PropTypes.func,
 };
 
 ResistorCalculator.defaultProps = {
-  form: ResistorForm
+  form: ResistorForm,
 };
 
 export default ResistorCalculator;

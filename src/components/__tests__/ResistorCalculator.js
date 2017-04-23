@@ -13,10 +13,11 @@ import ResistorCalculator from '../ResistorCalculator';
 import ResistorForm from '../ResistorForm';
 
 describe('ResistorCalculator', function () {
+
   it('should render with default state', function () {
-    const component = renderer.create(
-      <ResistorCalculator />
-    );
+
+    const component = renderer.create(<ResistorCalculator />);
+
     expect(component.toJSON()).toMatchSnapshot();
   });
 
@@ -32,9 +33,7 @@ describe('ResistorCalculator', function () {
       );
     }
 
-    const component = renderer.create(
-      <ResistorCalculator form={MockedForm} />
-    );
+    const component = renderer.create(<ResistorCalculator form={MockedForm} />);
 
     const form = component.toJSON().children.find(c => c.props.name === 'mocked-form');
     form.props.onChange('bands', '3');

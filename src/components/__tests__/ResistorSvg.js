@@ -23,11 +23,9 @@ describe('ResistorSvg', function () {
       multiplier: 0,
     });
 
-    const tree = renderer.create(
-      <ResistorSvg model={resistor} />
-    ).toJSON();
+    const component = renderer.create(<ResistorSvg model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 4-band resistor', function () {
@@ -40,11 +38,9 @@ describe('ResistorSvg', function () {
       tolerance: 5,
     });
 
-    const tree = renderer.create(
-      <ResistorSvg model={resistor} />
-    ).toJSON();
+    const component = renderer.create(<ResistorSvg model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 5-band resistor', function () {
@@ -58,11 +54,9 @@ describe('ResistorSvg', function () {
       tolerance: 10,
     });
 
-    const tree = renderer.create(
-      <ResistorSvg model={resistor} />
-    ).toJSON();
+    const component = renderer.create(<ResistorSvg model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 6-band resistor', function () {
@@ -77,11 +71,9 @@ describe('ResistorSvg', function () {
       tempCoef: 15,
     });
 
-    const tree = renderer.create(
-      <ResistorSvg model={resistor} />
-    ).toJSON();
+    const component = renderer.create(<ResistorSvg model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
 });

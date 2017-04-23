@@ -38,9 +38,7 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(
-      <ResistorForm model={resistor} />
-    );
+    const component = renderer.create(<ResistorForm model={resistor} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -55,9 +53,7 @@ describe('ResistorForm', function () {
       tolerance: 5,
     });
 
-    const component = renderer.create(
-      <ResistorForm model={resistor} />
-    );
+    const component = renderer.create(<ResistorForm model={resistor} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -72,9 +68,7 @@ describe('ResistorForm', function () {
       multiplier: 0,
       tolerance: 10,
     });
-    const component = renderer.create(
-      <ResistorForm model={resistor} />
-    );
+    const component = renderer.create(<ResistorForm model={resistor} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -90,9 +84,7 @@ describe('ResistorForm', function () {
       tolerance: 5,
       tempCoef: 15,
     });
-    const component = renderer.create(
-      <ResistorForm model={resistor} />
-    );
+    const component = renderer.create(<ResistorForm model={resistor} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -108,9 +100,7 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(
-      <ResistorForm model={resistor} onChange={onChange} />
-    );
+    const component = renderer.create(<ResistorForm model={resistor} onChange={onChange} />);
 
     const bands = find(component.toJSON().children, c => c.props && c.props.name === 'bands');
     bands.props.onChange({ target: { name: 'bands', value: '5' } });
@@ -127,9 +117,7 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(
-      <ResistorForm model={resistor} />
-    );
+    const component = renderer.create(<ResistorForm model={resistor} />);
 
     const bands = find(component.toJSON().children, c => c.props && c.props.name === 'bands');
     bands.props.onChange({ target: { name: 'bands', value: '5' } });

@@ -23,17 +23,14 @@ describe('ResistorValue', function () {
       multiplier: 0,
     });
 
-    const tree = renderer.create(
-      <ResistorValue model={resistor} />
-    ).toJSON();
+    let component = renderer.create(<ResistorValue model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
 
-    const longTree = renderer.create(
-      <ResistorValue model={resistor} formatOptions={{ short: false }} />
-    ).toJSON();
+    component = renderer.create(
+      <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(longTree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 4-band resistor', function () {
@@ -46,17 +43,14 @@ describe('ResistorValue', function () {
       tolerance: 5,
     });
 
-    const tree = renderer.create(
-      <ResistorValue model={resistor} />
-    ).toJSON();
+    let component = renderer.create(<ResistorValue model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
 
-    const longTree = renderer.create(
-      <ResistorValue model={resistor} formatOptions={{ short: false }} />
-    ).toJSON();
+    component = renderer.create(
+      <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(longTree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 5-band resistor', function () {
@@ -70,17 +64,14 @@ describe('ResistorValue', function () {
       tolerance: 10,
     });
 
-    const tree = renderer.create(
-      <ResistorValue model={resistor} />
-    ).toJSON();
+    let component = renderer.create(<ResistorValue model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
 
-    const longTree = renderer.create(
-      <ResistorValue model={resistor} formatOptions={{ short: false }} />
-    ).toJSON();
+    component = renderer.create(
+      <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(longTree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render a 6-band resistor', function () {
@@ -95,20 +86,18 @@ describe('ResistorValue', function () {
       tempCoef: 15,
     });
 
-    const tree = renderer.create(
-      <ResistorValue model={resistor} />
-    ).toJSON();
+    let component = renderer.create(<ResistorValue model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
 
-    const longTree = renderer.create(
-      <ResistorValue model={resistor} formatOptions={{ short: false }} />
-    ).toJSON();
+    component = renderer.create(
+      <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(longTree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should use the className supplied', function () {
+
     const resistor = new Resistor({
       bands: 4,
       digit1: 1,
@@ -117,10 +106,9 @@ describe('ResistorValue', function () {
       tolerance: 5,
     });
 
-    const tree = renderer.create(
-      <ResistorValue className="my-resistor-class" model={resistor} />
-    ).toJSON();
+    const component = renderer.create(
+      <ResistorValue className="my-resistor-class" model={resistor} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
