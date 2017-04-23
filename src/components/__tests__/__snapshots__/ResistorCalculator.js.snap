@@ -398,7 +398,6 @@ exports[`ResistorCalculator should render with default state 1`] = `
       </div>
     </div>
   </form>
-  ;
   <p
     className="resistor-value"
   >
@@ -820,7 +819,6 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
     </form>
     ;
   </div>
-  ;
   <p
     className="resistor-value"
   >

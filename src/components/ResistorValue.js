@@ -24,7 +24,7 @@ ResistorValue.propTypes = {
   formatOptions: React.PropTypes.object,
 };
 
-ResistorValue.defautProps = {
+ResistorValue.defaultProps = {
   formatOptions: {},
 };
 

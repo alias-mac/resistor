@@ -39,14 +39,11 @@ class ResistorCalculator extends React.Component {
   }
 
   render() {
-
-    const Form = this.props.form || ResistorForm;
-
     return (
       <div className="resistor-calc">
         <h2>Resistor Calculator</h2>
         <h4>Calculates values from color codes</h4>
-        <Form model={this.state.resistor} onChange={this.onChange} />;
+        <this.props.form model={this.state.resistor} onChange={this.onChange} />
         <ResistorValue
           className="resistor-value" formatOptions={{ short: true }}
           model={this.state.resistor}
@@ -56,5 +53,13 @@ class ResistorCalculator extends React.Component {
     );
   }
 }
+
+ResistorCalculator.propTypes = {
+  form: React.PropTypes.func
+};
+
+ResistorCalculator.defaultProps = {
+  form: ResistorForm
+};
 
 export default ResistorCalculator;

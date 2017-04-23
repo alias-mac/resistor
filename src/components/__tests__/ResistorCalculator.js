@@ -25,9 +25,11 @@ describe('ResistorCalculator', function () {
     function MockedForm(props) {
       const { onChange } = props;
 
-      return <div name="mocked-form" onChange={onChange}>
+      return (
+        <div name="mocked-form" onChange={onChange}>
         <ResistorForm {...props} />;
-      </div>
+        </div>
+      );
     }
 
     const component = renderer.create(

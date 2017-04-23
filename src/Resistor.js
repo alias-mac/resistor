@@ -131,7 +131,9 @@ class Resistor {
     return ohmage * (10 ** m); // Ω * 10^m
   }
 
-  toString({ short } = { short: true }) {
+  toString(options = {}) {
+
+    const short = options.short !== undefined ? options.short : true;
 
     let result = this.toOhms();
 
