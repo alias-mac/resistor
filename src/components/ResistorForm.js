@@ -35,7 +35,10 @@ function BandSelector(props) {
 }
 
 BandSelector.propTypes = {
-  options: React.PropTypes.array.isRequired,
+  options: React.PropTypes.arrayOf(React.PropTypes.shape({
+    label: React.PropTypes.string,
+    value: React.PropTypes.number,
+  })).isRequired,
   label: React.PropTypes.string.isRequired,
   value: React.PropTypes.number.isRequired,
 };
@@ -82,7 +85,7 @@ class ResistorForm extends React.Component {
           value={model.get('digit3')}
           options={digitOptions}
           onChange={this.onChange}
-        />
+        />,
       );
     }
 
@@ -99,7 +102,7 @@ class ResistorForm extends React.Component {
         value={model.get('digit2')}
         options={digitOptions}
         onChange={this.onChange}
-      />
+      />,
     );
 
     // all have multiplier
@@ -109,7 +112,7 @@ class ResistorForm extends React.Component {
         value={model.get('multiplier')}
         options={multiplierOptions}
         onChange={this.onChange}
-      />
+      />,
     );
 
     if (model.get('bands') !== 3) {
@@ -119,7 +122,7 @@ class ResistorForm extends React.Component {
           value={model.get('tolerance')}
           options={toleranceOptions}
           onChange={this.onChange}
-        />
+        />,
       );
     }
     if (model.get('bands') === 6) {
@@ -129,7 +132,7 @@ class ResistorForm extends React.Component {
           value={model.get('tempCoef')}
           options={tempCoefsOptions}
           onChange={this.onChange}
-        />
+        />,
       );
     }
 

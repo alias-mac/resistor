@@ -6,6 +6,8 @@
  * file that was distributed with this source code.
  */
 
+/* eslint-disable react/prop-types */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 
@@ -28,7 +30,7 @@ describe('ResistorCalculator', function () {
 
       return (
         <div name="mocked-form" onChange={onChange}>
-        <ResistorForm {...props} />;
+          <ResistorForm {...props} />;
         </div>
       );
     }

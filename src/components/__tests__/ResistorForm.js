@@ -16,7 +16,7 @@ function find(arr, func) {
   let found = arr.find(func);
 
   if (!found) {
-    for (const c of arr) {
+    for (const c of arr) { // eslint-disable-line no-restricted-syntax
       found = find(c.children, func);
       if (found) {
         return found;

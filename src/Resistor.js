@@ -95,10 +95,9 @@ class Resistor {
       (attrs = {})[key] = value;
     }
 
-    for (let attr in attrs) {
-      value = attrs[attr];
-      this.attributes[attr] = value;
-    }
+    Object.keys(attrs).forEach((attr) => {
+      this.attributes[attr] = attrs[attr];
+    });
 
     sanitize(this);
 
@@ -107,14 +106,14 @@ class Resistor {
 
   toOhms() {
 
-    let [d1, d2, d3, m] = [
+    let [d1, d2, d3, m] = [ // eslint-disable-line prefer-const
       this.get('digit1'),
       this.get('digit2'),
       this.get('digit3'),
       this.get('multiplier'),
     ].map(int => parseInt(int, 10) || 0);
 
-    switch (this.get('bands')) {
+    switch (this.get('bands')) { // eslint-disable-line default-case
       case 3:
       case 4:
         d1 *= 10;
@@ -137,7 +136,7 @@ class Resistor {
 
     let result = this.toOhms();
 
-    const unit = short ? 'Ω' : (result === 1 ? 'ohm' : 'ohms');
+    const unit = short ? 'Ω' : (result === 1 ? 'ohm' : 'ohms'); // eslint-disable-line no-nested-ternary
 
     let pow = '';
     if (result >= 1e9) {

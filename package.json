@@ -19,6 +19,11 @@
     "bootstrap": "4.0.0-alpha.5",
     "coveralls": "^2.11.15",
     "css-loader": "^0.26.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "gh-pages": "^0.12.0",
     "jest": "^19.0.2",
@@ -34,9 +39,10 @@
     "webpack-dev-server": "^2.3.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --inline --hot --config .config/webpack.config.js",
     "build": "webpack --config .config/webpack.config.js -p",
     "deploy": "gh-pages -d public",
+    "start": "webpack-dev-server --progress --inline --hot --config .config/webpack.config.js",
+    "lint": "eslint .",
     "test": "jest"
   },
   "jest": {

@@ -21,7 +21,9 @@ function ResistorValue(props) {
 
 ResistorValue.propTypes = {
   model: React.PropTypes.instanceOf(Resistor).isRequired,
-  formatOptions: React.PropTypes.object,
+  formatOptions: React.PropTypes.shape({
+    short: React.PropTypes.bool,
+  }),
 };
 
 ResistorValue.defaultProps = {
