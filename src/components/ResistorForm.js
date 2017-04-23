@@ -23,12 +23,13 @@ function BandSelector(props) {
 
   return (
     <div className="form-group">
-      <label>{label}</label>
-      <select {...other} value={value} className={`form-control ${color}`}>
-        {options.map(option => (
-          <option key={option.value} {...option}>{option.label}</option>
-        ))}
-      </select>
+      <label>{label}
+        <select {...other} value={value} className={`form-control ${color}`}>
+          {options.map(option => (
+            <option key={option.value} {...option}>{option.label}</option>
+          ))}
+        </select>
+      </label>
     </div>
   );
 }
@@ -136,16 +137,17 @@ class ResistorForm extends React.Component {
       <form className="resistor-form" {...other}>
         <div className="row">
           <div className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
-            <label>Strips</label>
-            <select
-              name="bands" className="form-control"
-              value={model.get('bands')}
-              onChange={this.onChange}
-            >
-              {[3, 4, 5, 6].map(i => (
-                <option key={i} value={i}>{i}-strip</option>
-              ))}
-            </select>
+            <label>Strips
+              <select
+                name="bands" className="form-control"
+                value={model.get('bands')}
+                onChange={this.onChange}
+              >
+                {[3, 4, 5, 6].map(i => (
+                  <option key={i} value={i}>{i}-strip</option>
+                ))}
+              </select>
+            </label>
           </div>
         </div>
 
@@ -166,7 +168,7 @@ ResistorForm.propTypes = {
 };
 
 ResistorForm.defaultProps = {
-  onChange: () => {},
+  onChange: () => { },
 };
 
 export default ResistorForm;

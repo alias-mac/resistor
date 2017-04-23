@@ -112,7 +112,7 @@ describe('ResistorForm', function () {
       <ResistorForm model={resistor} onChange={onChange} />
     );
 
-    const bands = find(component.toJSON().children, c => c.props.name === 'bands');
+    const bands = find(component.toJSON().children, c => c.props && c.props.name === 'bands');
     bands.props.onChange({ target: { name: 'bands', value: '5' } });
 
     expect(onChange).toHaveBeenCalledWith('bands', '5');
@@ -131,7 +131,7 @@ describe('ResistorForm', function () {
       <ResistorForm model={resistor} />
     );
 
-    const bands = find(component.toJSON().children, c => c.props.name === 'bands');
+    const bands = find(component.toJSON().children, c => c.props && c.props.name === 'bands');
     bands.props.onChange({ target: { name: 'bands', value: '5' } });
   });
 });
