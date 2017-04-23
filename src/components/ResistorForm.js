@@ -61,7 +61,7 @@ class ResistorForm extends React.Component {
   }
 
   render() {
-    const { model, ...other } = this.props;
+    const { model, onChange, ...other } = this.props;
 
     const digitOptions = Resistor.significantDigits.map(dropDownMapper);
     const multiplierOptions = Resistor.multipliers.map(dropDownMapper);
@@ -163,7 +163,10 @@ class ResistorForm extends React.Component {
 ResistorForm.propTypes = {
   model: React.PropTypes.instanceOf(Resistor).isRequired,
   onChange: React.PropTypes.func,
-  other: React.PropTypes.object,
+};
+
+ResistorForm.defaultProps = {
+  onChange: () => {},
 };
 
 export default ResistorForm;

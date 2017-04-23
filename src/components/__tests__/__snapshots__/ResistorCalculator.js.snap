@@ -12,7 +12,6 @@ exports[`ResistorCalculator should render with default state 1`] = `
   </h4>
   <form
     className="resistor-form"
-    onChange={[Function]}
   >
     <div
       className="row"
@@ -399,6 +398,7 @@ exports[`ResistorCalculator should render with default state 1`] = `
       </div>
     </div>
   </form>
+  ;
   <p
     className="resistor-value"
   >
@@ -493,328 +493,334 @@ exports[`ResistorCalculator should update to 3-band resistor 1`] = `
   <h4>
     Calculates values from color codes
   </h4>
-  <form
-    className="resistor-form"
+  <div
+    name="mocked-form"
     onChange={[Function]}
   >
-    <div
-      className="row"
+    <form
+      className="resistor-form"
     >
       <div
-        className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
+        className="row"
       >
-        <label>
-          Strips
-        </label>
-        <select
-          className="form-control"
-          name="bands"
-          onChange={[Function]}
-          value={3}
+        <div
+          className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5"
         >
-          <option
+          <label>
+            Strips
+          </label>
+          <select
+            className="form-control"
+            name="bands"
+            onChange={[Function]}
             value={3}
           >
-            3
-            -strip
-          </option>
-          <option
-            value={4}
-          >
-            4
-            -strip
-          </option>
-          <option
-            value={5}
-          >
-            5
-            -strip
-          </option>
-          <option
-            value={6}
-          >
-            6
-            -strip
-          </option>
-        </select>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col-xs-6 col-sm-2 offset-sm-3"
-      >
-        <div
-          className="form-group"
-        >
-          <label>
-            1st Digit
-          </label>
-          <select
-            className="form-control brown"
-            name="digit1"
-            onChange={[Function]}
-            value={1}
-          >
             <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
               value={3}
             >
-              orange
+              3
+              -strip
             </option>
             <option
-              className="yellow"
-              label="yellow"
               value={4}
             >
-              yellow
+              4
+              -strip
             </option>
             <option
-              className="green"
-              label="green"
               value={5}
             >
-              green
+              5
+              -strip
             </option>
             <option
-              className="blue"
-              label="blue"
               value={6}
             >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
+              6
+              -strip
             </option>
           </select>
         </div>
       </div>
       <div
-        className="col-xs-6 col-sm-2"
+        className="row"
       >
         <div
-          className="form-group"
+          className="col-xs-6 col-sm-2 offset-sm-3"
         >
-          <label>
-            2nd Digit
-          </label>
-          <select
-            className="form-control black"
-            name="digit2"
-            onChange={[Function]}
-            value={0}
+          <div
+            className="form-group"
           >
-            <option
-              className="black"
-              label="black"
+            <label>
+              1st Digit
+            </label>
+            <select
+              className="form-control brown"
+              name="digit1"
+              onChange={[Function]}
+              value={1}
+            >
+              <option
+                className="brown"
+                label="brown"
+                value={1}
+              >
+                brown
+              </option>
+              <option
+                className="red"
+                label="red"
+                value={2}
+              >
+                red
+              </option>
+              <option
+                className="orange"
+                label="orange"
+                value={3}
+              >
+                orange
+              </option>
+              <option
+                className="yellow"
+                label="yellow"
+                value={4}
+              >
+                yellow
+              </option>
+              <option
+                className="green"
+                label="green"
+                value={5}
+              >
+                green
+              </option>
+              <option
+                className="blue"
+                label="blue"
+                value={6}
+              >
+                blue
+              </option>
+              <option
+                className="violet"
+                label="violet"
+                value={7}
+              >
+                violet
+              </option>
+              <option
+                className="gray"
+                label="gray"
+                value={8}
+              >
+                gray
+              </option>
+              <option
+                className="white"
+                label="white"
+                value={9}
+              >
+                white
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          className="col-xs-6 col-sm-2"
+        >
+          <div
+            className="form-group"
+          >
+            <label>
+              2nd Digit
+            </label>
+            <select
+              className="form-control black"
+              name="digit2"
+              onChange={[Function]}
               value={0}
             >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
+              <option
+                className="black"
+                label="black"
+                value={0}
+              >
+                black
+              </option>
+              <option
+                className="brown"
+                label="brown"
+                value={1}
+              >
+                brown
+              </option>
+              <option
+                className="red"
+                label="red"
+                value={2}
+              >
+                red
+              </option>
+              <option
+                className="orange"
+                label="orange"
+                value={3}
+              >
+                orange
+              </option>
+              <option
+                className="yellow"
+                label="yellow"
+                value={4}
+              >
+                yellow
+              </option>
+              <option
+                className="green"
+                label="green"
+                value={5}
+              >
+                green
+              </option>
+              <option
+                className="blue"
+                label="blue"
+                value={6}
+              >
+                blue
+              </option>
+              <option
+                className="violet"
+                label="violet"
+                value={7}
+              >
+                violet
+              </option>
+              <option
+                className="gray"
+                label="gray"
+                value={8}
+              >
+                gray
+              </option>
+              <option
+                className="white"
+                label="white"
+                value={9}
+              >
+                white
+              </option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div
-        className="col-xs-6 col-sm-2"
-      >
         <div
-          className="form-group"
+          className="col-xs-6 col-sm-2"
         >
-          <label>
-            Multiplier
-          </label>
-          <select
-            className="form-control black"
-            name="multiplier"
-            onChange={[Function]}
-            value={0}
+          <div
+            className="form-group"
           >
-            <option
-              className="black"
-              label="black"
+            <label>
+              Multiplier
+            </label>
+            <select
+              className="form-control black"
+              name="multiplier"
+              onChange={[Function]}
               value={0}
             >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={-1}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={-2}
-            >
-              silver
-            </option>
-          </select>
+              <option
+                className="black"
+                label="black"
+                value={0}
+              >
+                black
+              </option>
+              <option
+                className="brown"
+                label="brown"
+                value={1}
+              >
+                brown
+              </option>
+              <option
+                className="red"
+                label="red"
+                value={2}
+              >
+                red
+              </option>
+              <option
+                className="orange"
+                label="orange"
+                value={3}
+              >
+                orange
+              </option>
+              <option
+                className="yellow"
+                label="yellow"
+                value={4}
+              >
+                yellow
+              </option>
+              <option
+                className="green"
+                label="green"
+                value={5}
+              >
+                green
+              </option>
+              <option
+                className="blue"
+                label="blue"
+                value={6}
+              >
+                blue
+              </option>
+              <option
+                className="violet"
+                label="violet"
+                value={7}
+              >
+                violet
+              </option>
+              <option
+                className="gray"
+                label="gray"
+                value={8}
+              >
+                gray
+              </option>
+              <option
+                className="white"
+                label="white"
+                value={9}
+              >
+                white
+              </option>
+              <option
+                className="gold"
+                label="gold"
+                value={-1}
+              >
+                gold
+              </option>
+              <option
+                className="silver"
+                label="silver"
+                value={-2}
+              >
+                silver
+              </option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+    ;
+  </div>
+  ;
   <p
     className="resistor-value"
   >
