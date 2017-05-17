@@ -8,13 +8,14 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import '../styles/resistor-calc.scss';
-
 import Resistor from '../Resistor';
 import ResistorForm from './ResistorForm';
 import ResistorValue from './ResistorValue';
 import ResistorSvg from './ResistorSvg';
+
+if (process.env.WEBPACK) {
+  require('../styles/resistor-calc.scss'); // eslint-disable-line global-require
+}
 
 class ResistorCalculator extends React.Component {
 

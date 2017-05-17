@@ -12,7 +12,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Resistor from '../Resistor';
 
-import '../styles/resistor-form.scss';
+if (process.env.WEBPACK) {
+  require('../styles/resistor-form.scss'); // eslint-disable-line global-require
+}
 
 function BandSelector(props) {
 

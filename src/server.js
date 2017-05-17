@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { renderToString } from 'react-dom/server';
 
 import ResistorCalculator from './components/ResistorCalculator';
 
-ReactDOM.render(<ResistorCalculator />, document.getElementById('container'));
+console.log(renderToString(<ResistorCalculator />));
