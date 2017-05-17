@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import Resistor from '../Resistor';
 
 function ResistorSvg(props) {
@@ -71,7 +72,7 @@ function ResistorSvg(props) {
 }
 
 ResistorSvg.propTypes = {
-  model: React.PropTypes.instanceOf(Resistor).isRequired,
+  model: PropTypes.instanceOf(Resistor).isRequired,
 };
 
 export default ResistorSvg;

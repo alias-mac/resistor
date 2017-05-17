@@ -8,8 +8,8 @@
 
 import _includes from 'lodash/includes';
 import _find from 'lodash/find';
-
 import React from 'react';
+import PropTypes from 'prop-types';
 import Resistor from '../Resistor';
 
 import '../styles/resistor-form.scss';
@@ -35,12 +35,12 @@ function BandSelector(props) {
 }
 
 BandSelector.propTypes = {
-  options: React.PropTypes.arrayOf(React.PropTypes.shape({
-    label: React.PropTypes.string,
-    value: React.PropTypes.number,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.number,
   })).isRequired,
-  label: React.PropTypes.string.isRequired,
-  value: React.PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
 };
 
 function dropDownMapper(def) {
@@ -166,8 +166,8 @@ class ResistorForm extends React.Component {
 }
 
 ResistorForm.propTypes = {
-  model: React.PropTypes.instanceOf(Resistor).isRequired,
-  onChange: React.PropTypes.func,
+  model: PropTypes.instanceOf(Resistor).isRequired,
+  onChange: PropTypes.func,
 };
 
 ResistorForm.defaultProps = {

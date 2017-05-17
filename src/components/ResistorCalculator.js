@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/resistor-calc.scss';
 
@@ -55,7 +56,7 @@ class ResistorCalculator extends React.Component {
 }
 
 ResistorCalculator.propTypes = {
-  form: React.PropTypes.func,
+  form: PropTypes.func,
 };
 
 ResistorCalculator.defaultProps = {

@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import Resistor from '../Resistor';
 
 function ResistorValue(props) {
@@ -20,9 +21,9 @@ function ResistorValue(props) {
 }
 
 ResistorValue.propTypes = {
-  model: React.PropTypes.instanceOf(Resistor).isRequired,
-  formatOptions: React.PropTypes.shape({
-    short: React.PropTypes.bool,
+  model: PropTypes.instanceOf(Resistor).isRequired,
+  formatOptions: PropTypes.shape({
+    short: PropTypes.bool,
   }),
 };
 
