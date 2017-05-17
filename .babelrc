@@ -1,6 +1,11 @@
 {
   "presets": [
-    ["es2015", { "modules": false }],
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "IE 11"],
+        "node": "current"
+      }
+    }],
     "react",
     "stage-3"
   ],
