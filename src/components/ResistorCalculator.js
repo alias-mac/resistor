@@ -6,6 +6,7 @@
  * file that was distributed with this source code.
  */
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import Resistor from '../Resistor';
 import ResistorForm from './ResistorForm';
@@ -16,43 +17,28 @@ if (process.env.WEBPACK) {
   require('../styles/resistor-calc.scss'); // eslint-disable-line global-require
 }
 
-class ResistorCalculator extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      resistor: new Resistor({
-        bands: 4,
-        digit1: 1,
-        digit2: 0,
-        multiplier: 0,
-      }),
-    };
-
-    this.onChange = this.onChange.bind(this);
-  }
-
-  onChange(prop, value) {
-    const resistor = this.state.resistor;
-    resistor.set(prop, value);
-    this.setState({ resistor });
-  }
-
-  render() {
-    return (
-      <div className="resistor-calc">
-        <h2>Resistor Calculator</h2>
-        <h4>Calculates values from color codes</h4>
-        <ResistorForm model={this.state.resistor} onChange={this.onChange} />
-        <ResistorValue
-          className="resistor-value" formatOptions={{ short: true }}
-          model={this.state.resistor}
-        />
-        <ResistorSvg model={this.state.resistor} />
-      </div>
-    );
-  }
+function ResistorCalculator({ model, onChange }) {
+  return (
+    <div className="resistor-calc">
+      <h2>Resistor Calculator</h2>
+      <h4>Calculates values from color codes</h4>
+      <ResistorForm model={model} onChange={onChange} />
+      <ResistorValue
+        className="resistor-value" formatOptions={{ short: true }}
+        model={model}
+      />
+      <ResistorSvg model={model} />
+    </div>
+  );
 }
+
+ResistorCalculator.propTypes = {
+  model: PropTypes.instanceOf(Resistor).isRequired,
+  onChange: PropTypes.func,
+};
+
+ResistorCalculator.defaultProps = {
+  onChange: () => { },
+};
 
 export default ResistorCalculator;

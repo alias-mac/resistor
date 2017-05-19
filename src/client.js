@@ -9,6 +9,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ResistorCalculator from './components/ResistorCalculator';
+import App from './containers/App';
 
-ReactDOM.render(<ResistorCalculator />, document.getElementById('container'));
+ReactDOM.render(<App />, document.getElementById('container'));

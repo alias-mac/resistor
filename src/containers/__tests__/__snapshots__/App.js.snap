@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render with default state 1`] = `
+<div>
+  <ResistorCalculator
+    model={
+      Resistor {
+        "attributes": Object {
+          "bands": 4,
+          "digit1": 1,
+          "digit2": 0,
+          "digit3": 0,
+          "multiplier": 0,
+          "tempCoef": 250,
+          "tolerance": 10,
+        },
+      }
+    }
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`App should update resistor state 1`] = `
+<div>
+  <ResistorCalculator
+    model={
+      Resistor {
+        "attributes": Object {
+          "bands": 4,
+          "digit1": 1,
+          "digit2": 0,
+          "digit3": 0,
+          "multiplier": 0,
+          "tempCoef": 250,
+          "tolerance": 10,
+        },
+      }
+    }
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`App should update resistor state 2`] = `
+<div>
+  <ResistorCalculator
+    model={
+      Resistor {
+        "attributes": Object {
+          "bands": 3,
+          "digit1": 1,
+          "digit2": 0,
+          "digit3": 0,
+          "multiplier": 0,
+          "tempCoef": 250,
+          "tolerance": 10,
+        },
+      }
+    }
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`App should update resistor state 3`] = `
+<div>
+  <ResistorCalculator
+    model={
+      Resistor {
+        "attributes": Object {
+          "bands": 5,
+          "digit1": 3,
+          "digit2": 5,
+          "digit3": 0,
+          "multiplier": 2,
+          "tempCoef": 250,
+          "tolerance": 10,
+        },
+      }
+    }
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`App should update resistor state 4`] = `
+<div>
+  <ResistorCalculator
+    model={
+      Resistor {
+        "attributes": Object {
+          "bands": 6,
+          "digit1": 3,
+          "digit2": 5,
+          "digit3": 7,
+          "multiplier": 2,
+          "tempCoef": 100,
+          "tolerance": 0.5,
+        },
+      }
+    }
+    onChange={[Function]}
+  />
+</div>
+`;

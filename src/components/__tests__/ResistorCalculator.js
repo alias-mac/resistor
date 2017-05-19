@@ -13,24 +13,38 @@ import { shallow } from 'enzyme';
 
 import ResistorCalculator from '../ResistorCalculator';
 import ResistorForm from '../ResistorForm';
+import Resistor from '../../Resistor';
 
 describe('ResistorCalculator', function () {
 
-  it('should render with default state', function () {
+  it('should render', function () {
+    const model = new Resistor({
+      bands: 4,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
 
-    const component = shallow(<ResistorCalculator />);
+    const component = shallow(<ResistorCalculator model={model} />);
 
     expect(component).toMatchSnapshot();
   });
 
-  it('should update to 3-band resistor', function () {
+  it('should call parent update on child form update', function () {
 
-    const component = shallow(<ResistorCalculator />);
+    const onChange = jest.fn();
 
-    expect(component).toMatchSnapshot();
+    const model = new Resistor({
+      bands: 4,
+      digit1: 1,
+      digit2: 0,
+      multiplier: 0,
+    });
 
-    component.find(ResistorForm).props().onChange('bands', '3');
+    const component = shallow(<ResistorCalculator model={model} onChange={onChange} />);
 
-    expect(component).toMatchSnapshot();
+    component.find(ResistorForm).props().onChange('bands', '5');
+
+    expect(onChange).toHaveBeenCalledWith('bands', '5');
   });
 });
