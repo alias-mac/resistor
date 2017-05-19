@@ -7,25 +7,10 @@
  */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 
 import Resistor from '../../Resistor';
 import ResistorForm from '../ResistorForm';
-
-function find(arr, func) {
-  let found = arr.find(func);
-
-  if (!found) {
-    for (const c of arr) { // eslint-disable-line no-restricted-syntax
-      found = find(c.children, func);
-      if (found) {
-        return found;
-      }
-    }
-  }
-
-  return found;
-}
 
 describe('ResistorForm', function () {
 
@@ -38,9 +23,9 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(<ResistorForm model={resistor} />);
+    const component = shallow(<ResistorForm model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 4-band resistor', function () {
@@ -53,9 +38,9 @@ describe('ResistorForm', function () {
       tolerance: 5,
     });
 
-    const component = renderer.create(<ResistorForm model={resistor} />);
+    const component = shallow(<ResistorForm model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 5-band resistor', function () {
@@ -68,9 +53,9 @@ describe('ResistorForm', function () {
       multiplier: 0,
       tolerance: 10,
     });
-    const component = renderer.create(<ResistorForm model={resistor} />);
+    const component = shallow(<ResistorForm model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 6-band resistor', function () {
@@ -84,9 +69,9 @@ describe('ResistorForm', function () {
       tolerance: 5,
       tempCoef: 15,
     });
-    const component = renderer.create(<ResistorForm model={resistor} />);
+    const component = shallow(<ResistorForm model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should call callback onChange', function () {
@@ -100,10 +85,9 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(<ResistorForm model={resistor} onChange={onChange} />);
+    const component = shallow(<ResistorForm model={resistor} onChange={onChange} />);
 
-    const bands = find(component.toJSON().children, c => c.props && c.props.name === 'bands');
-    bands.props.onChange({ target: { name: 'bands', value: '5' } });
+    component.find('select[name="bands"]').simulate('change', { target: { name: 'bands', value: '5' } });
 
     expect(onChange).toHaveBeenCalledWith('bands', '5');
   });
@@ -117,9 +101,7 @@ describe('ResistorForm', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(<ResistorForm model={resistor} />);
-
-    const bands = find(component.toJSON().children, c => c.props && c.props.name === 'bands');
-    bands.props.onChange({ target: { name: 'bands', value: '5' } });
+    const component = shallow(<ResistorForm model={resistor} />);
+    component.find('select[name="bands"]').simulate('change', { target: { name: 'bands', value: '5' } });
   });
 });

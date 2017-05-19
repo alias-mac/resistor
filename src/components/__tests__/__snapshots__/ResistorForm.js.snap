@@ -52,273 +52,199 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
     <div
       className="col-xs-6 col-sm-2 offset-sm-3"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          1st Digit
-          <select
-            className="form-control brown"
-            name="digit1"
-            onChange={[Function]}
-            value={1}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="1st Digit"
+        name="digit1"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={1}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          2nd Digit
-          <select
-            className="form-control black"
-            name="digit2"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="2nd Digit"
+        name="digit2"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Multiplier
-          <select
-            className="form-control black"
-            name="multiplier"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={-1}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={-2}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Multiplier"
+        name="multiplier"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": -1,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": -2,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
   </div>
 </form>
@@ -376,340 +302,248 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
     <div
       className="col-xs-6 col-sm-2 offset-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          1st Digit
-          <select
-            className="form-control brown"
-            name="digit1"
-            onChange={[Function]}
-            value={1}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="1st Digit"
+        name="digit1"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={1}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          2nd Digit
-          <select
-            className="form-control black"
-            name="digit2"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="2nd Digit"
+        name="digit2"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Multiplier
-          <select
-            className="form-control black"
-            name="multiplier"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={-1}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={-2}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Multiplier"
+        name="multiplier"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": -1,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": -2,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Tolerance
-          <select
-            className="form-control gold"
-            name="tolerance"
-            onChange={[Function]}
-            value={5}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={0.5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={0.25}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={0.1}
-            >
-              violet
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={5}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={10}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Tolerance"
+        name="tolerance"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 0.5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 0.25,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 0.1,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": 5,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": 10,
+            },
+          ]
+        }
+        value={5}
+      />
     </div>
   </div>
 </form>
@@ -767,428 +601,312 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
     <div
       className="col-xs-6 col-sm-2 offset-sm-1"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          1st Digit
-          <select
-            className="form-control brown"
-            name="digit1"
-            onChange={[Function]}
-            value={1}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="1st Digit"
+        name="digit1"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={1}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          2nd Digit
-          <select
-            className="form-control black"
-            name="digit2"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="2nd Digit"
+        name="digit2"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          3rd Digit
-          <select
-            className="form-control black"
-            name="digit3"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="3rd Digit"
+        name="digit3"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Multiplier
-          <select
-            className="form-control black"
-            name="multiplier"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={-1}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={-2}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Multiplier"
+        name="multiplier"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": -1,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": -2,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Tolerance
-          <select
-            className="form-control silver"
-            name="tolerance"
-            onChange={[Function]}
-            value={10}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={0.5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={0.25}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={0.1}
-            >
-              violet
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={5}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={10}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Tolerance"
+        name="tolerance"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 0.5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 0.25,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 0.1,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": 5,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": 10,
+            },
+          ]
+        }
+        value={10}
+      />
     </div>
   </div>
 </form>
@@ -1246,509 +964,371 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     <div
       className="col-xs-6 col-sm-2 offset-sm-0"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          1st Digit
-          <select
-            className="form-control brown"
-            name="digit1"
-            onChange={[Function]}
-            value={1}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="1st Digit"
+        name="digit1"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={1}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          2nd Digit
-          <select
-            className="form-control black"
-            name="digit2"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="2nd Digit"
+        name="digit2"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          3rd Digit
-          <select
-            className="form-control black"
-            name="digit3"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="3rd Digit"
+        name="digit3"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Multiplier
-          <select
-            className="form-control black"
-            name="multiplier"
-            onChange={[Function]}
-            value={0}
-          >
-            <option
-              className="black"
-              label="black"
-              value={0}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={3}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={4}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={6}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={7}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={8}
-            >
-              gray
-            </option>
-            <option
-              className="white"
-              label="white"
-              value={9}
-            >
-              white
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={-1}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={-2}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Multiplier"
+        name="multiplier"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 0,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 3,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 4,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 6,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 7,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 8,
+            },
+            Object {
+              "className": "white",
+              "label": "white",
+              "value": 9,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": -1,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": -2,
+            },
+          ]
+        }
+        value={0}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Tolerance
-          <select
-            className="form-control gold"
-            name="tolerance"
-            onChange={[Function]}
-            value={5}
-          >
-            <option
-              className="brown"
-              label="brown"
-              value={1}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={2}
-            >
-              red
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={0.5}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={0.25}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={0.1}
-            >
-              violet
-            </option>
-            <option
-              className="gold"
-              label="gold"
-              value={5}
-            >
-              gold
-            </option>
-            <option
-              className="silver"
-              label="silver"
-              value={10}
-            >
-              silver
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Tolerance"
+        name="tolerance"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 1,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 2,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 0.5,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 0.25,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 0.1,
+            },
+            Object {
+              "className": "gold",
+              "label": "gold",
+              "value": 5,
+            },
+            Object {
+              "className": "silver",
+              "label": "silver",
+              "value": 10,
+            },
+          ]
+        }
+        value={5}
+      />
     </div>
     <div
       className="col-xs-6 col-sm-2"
     >
-      <div
-        className="form-group"
-      >
-        <label>
-          Temp. Coef.
-          <select
-            className="form-control orange"
-            name="tempCoef"
-            onChange={[Function]}
-            value={15}
-          >
-            <option
-              className="black"
-              label="black"
-              value={250}
-            >
-              black
-            </option>
-            <option
-              className="brown"
-              label="brown"
-              value={100}
-            >
-              brown
-            </option>
-            <option
-              className="red"
-              label="red"
-              value={50}
-            >
-              red
-            </option>
-            <option
-              className="orange"
-              label="orange"
-              value={15}
-            >
-              orange
-            </option>
-            <option
-              className="yellow"
-              label="yellow"
-              value={25}
-            >
-              yellow
-            </option>
-            <option
-              className="green"
-              label="green"
-              value={20}
-            >
-              green
-            </option>
-            <option
-              className="blue"
-              label="blue"
-              value={10}
-            >
-              blue
-            </option>
-            <option
-              className="violet"
-              label="violet"
-              value={5}
-            >
-              violet
-            </option>
-            <option
-              className="gray"
-              label="gray"
-              value={1}
-            >
-              gray
-            </option>
-          </select>
-        </label>
-      </div>
+      <BandSelector
+        label="Temp. Coef."
+        name="tempCoef"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "className": "black",
+              "label": "black",
+              "value": 250,
+            },
+            Object {
+              "className": "brown",
+              "label": "brown",
+              "value": 100,
+            },
+            Object {
+              "className": "red",
+              "label": "red",
+              "value": 50,
+            },
+            Object {
+              "className": "orange",
+              "label": "orange",
+              "value": 15,
+            },
+            Object {
+              "className": "yellow",
+              "label": "yellow",
+              "value": 25,
+            },
+            Object {
+              "className": "green",
+              "label": "green",
+              "value": 20,
+            },
+            Object {
+              "className": "blue",
+              "label": "blue",
+              "value": 10,
+            },
+            Object {
+              "className": "violet",
+              "label": "violet",
+              "value": 5,
+            },
+            Object {
+              "className": "gray",
+              "label": "gray",
+              "value": 1,
+            },
+          ]
+        }
+        value={15}
+      />
     </div>
   </div>
 </form>
