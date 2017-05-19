@@ -13,6 +13,7 @@
     "babel-core": "^6.22.1",
     "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.10",
+    "babel-plugin-module-resolver": "^2.7.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-3": "^6.22.0",
@@ -23,6 +24,7 @@
     "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-import-resolver-babel-module": "^3.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
@@ -53,6 +55,8 @@
     "moduleNameMapper": {
       "\\.(scss)$": "<rootDir>/__mocks__/styleMock.js"
     },
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

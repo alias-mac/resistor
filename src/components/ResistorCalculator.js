@@ -8,7 +8,8 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import Resistor from '../Resistor';
+
+import Resistor from 'models/Resistor';
 import ResistorForm from './ResistorForm';
 import ResistorValue from './ResistorValue';
 import ResistorSvg from './ResistorSvg';

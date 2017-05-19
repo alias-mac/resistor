@@ -11,9 +11,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import Resistor from 'models/Resistor';
 import ResistorCalculator from '../ResistorCalculator';
 import ResistorForm from '../ResistorForm';
-import Resistor from '../../Resistor';
 
 describe('ResistorCalculator', function () {
 

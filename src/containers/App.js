@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import Resistor from '../Resistor';
-import ResistorCalculator from '../components/ResistorCalculator';
+import Resistor from 'models/Resistor';
+import ResistorCalculator from 'components/ResistorCalculator';
 
 class App extends React.Component {
 

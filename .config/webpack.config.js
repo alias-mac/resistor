@@ -80,7 +80,7 @@ const config = {
       path.join(__dirname, '../src'),
       'node_modules',
     ],
-    extensions: ['.webpack.js', '.web.js', '.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
   },
 };
 

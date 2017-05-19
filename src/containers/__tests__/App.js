@@ -11,8 +11,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import ResistorCalculator from 'components/ResistorCalculator';
 import App from '../App';
-import ResistorCalculator from '../../components/ResistorCalculator';
 
 describe('App', function () {
 

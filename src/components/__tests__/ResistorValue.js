@@ -9,7 +9,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Resistor from '../../Resistor';
+import Resistor from 'models/Resistor';
 import ResistorValue from '../ResistorValue';
 
 describe('ResistorValue', function () {

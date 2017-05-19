@@ -10,7 +10,8 @@ import _includes from 'lodash/includes';
 import _find from 'lodash/find';
 import React from 'react';
 import PropTypes from 'prop-types';
-import Resistor from '../Resistor';
+
+import Resistor from 'models/Resistor';
 
 if (process.env.WEBPACK) {
   require('../styles/resistor-form.scss'); // eslint-disable-line global-require

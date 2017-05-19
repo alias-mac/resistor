@@ -8,7 +8,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Resistor from '../Resistor';
+
+import Resistor from 'models/Resistor';
 
 function ResistorValue(props) {
 

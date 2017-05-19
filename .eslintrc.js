@@ -22,4 +22,9 @@ module.exports = {
     // let the code breathe!
     'padded-blocks': 'off',
   },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
 };

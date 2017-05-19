@@ -10,6 +10,18 @@
     "stage-3"
   ],
 
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "components": "components",
+        "containers": "containers",
+        "models": "models"
+      },
+      "extensions": [".js", ".jsx", ".json"]
+    }]
+  ],
+
   "env": {
     "test": {
       "plugins": ["transform-es2015-modules-commonjs"]
