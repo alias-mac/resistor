@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 
 import Resistor from '../../Resistor';
 import ResistorForm from '../ResistorForm';
@@ -103,5 +103,20 @@ describe('ResistorForm', function () {
 
     const component = shallow(<ResistorForm model={resistor} />);
     component.find('select[name="bands"]').simulate('change', { target: { name: 'bands', value: '5' } });
+  });
+
+  it('should render full form', function () {
+    const resistor = new Resistor({
+      bands: 6,
+      digit1: 1,
+      digit2: 0,
+      digit3: 0,
+      multiplier: 0,
+      tolerance: 5,
+      tempCoef: 15,
+    });
+    const component = render(<ResistorForm model={resistor} />);
+
+    expect(component).toMatchSnapshot();
   });
 });
