@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 
 import Resistor from '../../Resistor';
 import ResistorValue from '../ResistorValue';
@@ -23,14 +23,14 @@ describe('ResistorValue', function () {
       multiplier: 0,
     });
 
-    let component = renderer.create(<ResistorValue model={resistor} />);
+    let component = shallow(<ResistorValue model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
 
-    component = renderer.create(
+    component = shallow(
       <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 4-band resistor', function () {
@@ -43,14 +43,14 @@ describe('ResistorValue', function () {
       tolerance: 5,
     });
 
-    let component = renderer.create(<ResistorValue model={resistor} />);
+    let component = shallow(<ResistorValue model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
 
-    component = renderer.create(
+    component = shallow(
       <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 5-band resistor', function () {
@@ -64,14 +64,14 @@ describe('ResistorValue', function () {
       tolerance: 10,
     });
 
-    let component = renderer.create(<ResistorValue model={resistor} />);
+    let component = shallow(<ResistorValue model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
 
-    component = renderer.create(
+    component = shallow(
       <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 6-band resistor', function () {
@@ -86,14 +86,14 @@ describe('ResistorValue', function () {
       tempCoef: 15,
     });
 
-    let component = renderer.create(<ResistorValue model={resistor} />);
+    let component = shallow(<ResistorValue model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
 
-    component = renderer.create(
+    component = shallow(
       <ResistorValue model={resistor} formatOptions={{ short: false }} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should use the className supplied', function () {
@@ -106,9 +106,9 @@ describe('ResistorValue', function () {
       tolerance: 5,
     });
 
-    const component = renderer.create(
+    const component = shallow(
       <ResistorValue className="my-resistor-class" model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 });

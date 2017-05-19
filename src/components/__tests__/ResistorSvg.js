@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 
 import Resistor from '../../Resistor';
 import ResistorSvg from '../ResistorSvg';
@@ -23,9 +23,9 @@ describe('ResistorSvg', function () {
       multiplier: 0,
     });
 
-    const component = renderer.create(<ResistorSvg model={resistor} />);
+    const component = shallow(<ResistorSvg model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 4-band resistor', function () {
@@ -38,9 +38,9 @@ describe('ResistorSvg', function () {
       tolerance: 5,
     });
 
-    const component = renderer.create(<ResistorSvg model={resistor} />);
+    const component = shallow(<ResistorSvg model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 5-band resistor', function () {
@@ -54,9 +54,9 @@ describe('ResistorSvg', function () {
       tolerance: 10,
     });
 
-    const component = renderer.create(<ResistorSvg model={resistor} />);
+    const component = shallow(<ResistorSvg model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should render a 6-band resistor', function () {
@@ -71,9 +71,9 @@ describe('ResistorSvg', function () {
       tempCoef: 15,
     });
 
-    const component = renderer.create(<ResistorSvg model={resistor} />);
+    const component = shallow(<ResistorSvg model={resistor} />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
 });
