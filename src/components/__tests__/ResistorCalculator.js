@@ -9,7 +9,7 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 
 import ResistorCalculator from '../ResistorCalculator';
 import ResistorForm from '../ResistorForm';
@@ -18,28 +18,19 @@ describe('ResistorCalculator', function () {
 
   it('should render with default state', function () {
 
-    const component = renderer.create(<ResistorCalculator />);
+    const component = shallow(<ResistorCalculator />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should update to 3-band resistor', function () {
 
-    function MockedForm(props) {
-      const { onChange } = props;
+    const component = shallow(<ResistorCalculator />);
 
-      return (
-        <div name="mocked-form" onChange={onChange}>
-          <ResistorForm {...props} />;
-        </div>
-      );
-    }
+    expect(component).toMatchSnapshot();
 
-    const component = renderer.create(<ResistorCalculator form={MockedForm} />);
+    component.find(ResistorForm).props().onChange('bands', '3');
 
-    const form = component.toJSON().children.find(c => c.props.name === 'mocked-form');
-    form.props.onChange('bands', '3');
-
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 });

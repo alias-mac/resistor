@@ -19,6 +19,8 @@
     "bootstrap": "4.0.0-alpha.5",
     "coveralls": "^2.11.15",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
@@ -50,6 +52,7 @@
     "rootDir": "src",
     "moduleNameMapper": {
       "\\.(scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+    },
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
