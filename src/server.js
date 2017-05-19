@@ -9,6 +9,6 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
-import ResistorCalculator from './components/ResistorCalculator';
+import App from 'containers/App';
 
-console.log(renderToString(<ResistorCalculator />));
+console.log(renderToString(<App />));
