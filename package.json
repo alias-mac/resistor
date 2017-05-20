@@ -20,6 +20,7 @@
     "bootstrap": "4.0.0-alpha.5",
     "coveralls": "^2.11.15",
     "css-loader": "^0.26.1",
+    "debug": "^2.6.8",
     "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
@@ -33,6 +34,7 @@
     "jest": "^19.0.2",
     "lodash": "^4.17.4",
     "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.2",
     "postcss-loader": "^1.2.2",
     "prop-types": "^15.5.0",
     "react": "^15.5.0",
@@ -44,9 +46,13 @@
     "webpack-dev-server": "^2.3.0"
   },
   "scripts": {
-    "build": "webpack --config .config/webpack.config.js -p",
+    "build": "npm-run-all -l -p build:*",
+    "build:server": "babel-node src/server.js",
+    "build:client": "webpack --color --config .config/webpack.config.js -p",
     "deploy": "gh-pages -d public",
-    "start": "webpack-dev-server --progress --inline --hot --config .config/webpack.config.js",
+    "start": "npm-run-all -l -p -r start:*",
+    "start:server": "nodemon src/server.js --watch src/ --exec babel-node",
+    "start:client": "webpack-dev-server --color --progress --inline --hot --watch-content-base --config .config/webpack.config.js",
     "lint": "eslint .",
     "test": "jest"
   },
