@@ -84,7 +84,9 @@ class ResistorForm extends React.Component {
     if (_includes([5, 6], model.get('bands'))) {
       bands.push(
         <BandSelector
-          key="digit3" name="digit3" label="3rd Digit"
+          key="digit3"
+          name="digit3"
+          label="3rd Digit"
           value={model.get('digit3')}
           options={digitOptions}
           onChange={this.onChange}
@@ -95,13 +97,17 @@ class ResistorForm extends React.Component {
     // all have at least 2 first digits
     bands.unshift(
       <BandSelector
-        key="digit1" name="digit1" label="1st Digit"
+        key="digit1"
+        name="digit1"
+        label="1st Digit"
         value={model.get('digit1')}
         options={firstDigitOptions}
         onChange={this.onChange}
       />,
       <BandSelector
-        key="digit2" name="digit2" label="2nd Digit"
+        key="digit2"
+        name="digit2"
+        label="2nd Digit"
         value={model.get('digit2')}
         options={digitOptions}
         onChange={this.onChange}
@@ -111,7 +117,9 @@ class ResistorForm extends React.Component {
     // all have multiplier
     bands.push(
       <BandSelector
-        key="multiplier" name="multiplier" label="Multiplier"
+        key="multiplier"
+        name="multiplier"
+        label="Multiplier"
         value={model.get('multiplier')}
         options={multiplierOptions}
         onChange={this.onChange}
@@ -121,7 +129,9 @@ class ResistorForm extends React.Component {
     if (model.get('bands') !== 3) {
       bands.push(
         <BandSelector
-          key="tolerance" name="tolerance" label="Tolerance"
+          key="tolerance"
+          name="tolerance"
+          label="Tolerance"
           value={model.get('tolerance')}
           options={toleranceOptions}
           onChange={this.onChange}
@@ -131,7 +141,9 @@ class ResistorForm extends React.Component {
     if (model.get('bands') === 6) {
       bands.push(
         <BandSelector
-          key="tempCoef" name="tempCoef" label="Temp. Coef."
+          key="tempCoef"
+          name="tempCoef"
+          label="Temp. Coef."
           value={model.get('tempCoef')}
           options={tempCoefsOptions}
           onChange={this.onChange}
@@ -145,7 +157,8 @@ class ResistorForm extends React.Component {
           <div className="form-group col-sm-6 offset-sm-3 col-md-2 offset-md-5">
             <label>Strips
               <select
-                name="bands" className="form-control"
+                name="bands"
+                className="form-control"
                 value={model.get('bands')}
                 onChange={this.onChange}
               >

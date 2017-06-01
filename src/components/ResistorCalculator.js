@@ -25,7 +25,8 @@ function ResistorCalculator({ model, onChange }) {
       <h4>Calculates values from color codes</h4>
       <ResistorForm model={model} onChange={onChange} />
       <ResistorValue
-        className="resistor-value" formatOptions={{ short: true }}
+        className="resistor-value"
+        formatOptions={{ short: true }}
         model={model}
       />
       <ResistorSvg model={model} />
