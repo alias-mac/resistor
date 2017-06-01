@@ -9,7 +9,7 @@
   "author": "Filipe Guerra <alias.mac@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^6.7.2",
+    "autoprefixer": "^7.1.1",
     "babel-core": "^6.22.1",
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.0.0",
