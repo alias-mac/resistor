@@ -4,7 +4,10 @@ module.exports = {
     'browser': true,
     'jest': true
   },
-  extends: 'airbnb',
+  extends: [
+    'airbnb',
+    'plugin:jest/recommended',
+  ],
   rules: {
     // in jest this is normal
     'func-names': ['error', 'never'],
@@ -22,9 +25,12 @@ module.exports = {
     // let the code breathe!
     'padded-blocks': 'off',
   },
-  "settings": {
-    "import/resolver": {
-      "babel-module": {}
-    }
-  }
+
+  plugins: ['jest'],
+
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
+    },
+  },
 };
