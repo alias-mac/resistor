@@ -9,11 +9,14 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 import Resistor from 'models/Resistor';
 import ResistorCalculator from '../ResistorCalculator';
 import ResistorForm from '../ResistorForm';
+
+configure({ adapter: new Adapter() });
 
 describe('ResistorCalculator', function () {
 

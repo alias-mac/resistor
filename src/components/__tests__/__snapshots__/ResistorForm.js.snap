@@ -19,28 +19,28 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
           value={3}
         >
           <option
+            key="3"
             value={3}
           >
-            3
-            -strip
+            3-strip
           </option>
           <option
+            key="4"
             value={4}
           >
-            4
-            -strip
+            4-strip
           </option>
           <option
+            key="5"
             value={5}
           >
-            5
-            -strip
+            5-strip
           </option>
           <option
+            key="6"
             value={6}
           >
-            6
-            -strip
+            6-strip
           </option>
         </select>
       </label>
@@ -51,8 +51,10 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
   >
     <div
       className="col-xs-6 col-sm-2 offset-sm-3"
+      key="digit1"
     >
       <BandSelector
+        key="digit1"
         label="1st Digit"
         name="digit1"
         onChange={[Function]}
@@ -110,8 +112,10 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="digit2"
     >
       <BandSelector
+        key="digit2"
         label="2nd Digit"
         name="digit2"
         onChange={[Function]}
@@ -174,8 +178,10 @@ exports[`ResistorForm should render a 3-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="multiplier"
     >
       <BandSelector
+        key="multiplier"
         label="Multiplier"
         name="multiplier"
         onChange={[Function]}
@@ -269,28 +275,28 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
           value={4}
         >
           <option
+            key="3"
             value={3}
           >
-            3
-            -strip
+            3-strip
           </option>
           <option
+            key="4"
             value={4}
           >
-            4
-            -strip
+            4-strip
           </option>
           <option
+            key="5"
             value={5}
           >
-            5
-            -strip
+            5-strip
           </option>
           <option
+            key="6"
             value={6}
           >
-            6
-            -strip
+            6-strip
           </option>
         </select>
       </label>
@@ -301,8 +307,10 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
   >
     <div
       className="col-xs-6 col-sm-2 offset-sm-2"
+      key="digit1"
     >
       <BandSelector
+        key="digit1"
         label="1st Digit"
         name="digit1"
         onChange={[Function]}
@@ -360,8 +368,10 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="digit2"
     >
       <BandSelector
+        key="digit2"
         label="2nd Digit"
         name="digit2"
         onChange={[Function]}
@@ -424,8 +434,10 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="multiplier"
     >
       <BandSelector
+        key="multiplier"
         label="Multiplier"
         name="multiplier"
         onChange={[Function]}
@@ -498,8 +510,10 @@ exports[`ResistorForm should render a 4-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="tolerance"
     >
       <BandSelector
+        key="tolerance"
         label="Tolerance"
         name="tolerance"
         onChange={[Function]}
@@ -568,28 +582,28 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
           value={5}
         >
           <option
+            key="3"
             value={3}
           >
-            3
-            -strip
+            3-strip
           </option>
           <option
+            key="4"
             value={4}
           >
-            4
-            -strip
+            4-strip
           </option>
           <option
+            key="5"
             value={5}
           >
-            5
-            -strip
+            5-strip
           </option>
           <option
+            key="6"
             value={6}
           >
-            6
-            -strip
+            6-strip
           </option>
         </select>
       </label>
@@ -600,8 +614,10 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
   >
     <div
       className="col-xs-6 col-sm-2 offset-sm-1"
+      key="digit1"
     >
       <BandSelector
+        key="digit1"
         label="1st Digit"
         name="digit1"
         onChange={[Function]}
@@ -659,8 +675,10 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="digit2"
     >
       <BandSelector
+        key="digit2"
         label="2nd Digit"
         name="digit2"
         onChange={[Function]}
@@ -723,8 +741,10 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="digit3"
     >
       <BandSelector
+        key="digit3"
         label="3rd Digit"
         name="digit3"
         onChange={[Function]}
@@ -787,8 +807,10 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="multiplier"
     >
       <BandSelector
+        key="multiplier"
         label="Multiplier"
         name="multiplier"
         onChange={[Function]}
@@ -861,8 +883,10 @@ exports[`ResistorForm should render a 5-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="tolerance"
     >
       <BandSelector
+        key="tolerance"
         label="Tolerance"
         name="tolerance"
         onChange={[Function]}
@@ -931,28 +955,28 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
           value={6}
         >
           <option
+            key="3"
             value={3}
           >
-            3
-            -strip
+            3-strip
           </option>
           <option
+            key="4"
             value={4}
           >
-            4
-            -strip
+            4-strip
           </option>
           <option
+            key="5"
             value={5}
           >
-            5
-            -strip
+            5-strip
           </option>
           <option
+            key="6"
             value={6}
           >
-            6
-            -strip
+            6-strip
           </option>
         </select>
       </label>
@@ -963,8 +987,10 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
   >
     <div
       className="col-xs-6 col-sm-2 offset-sm-0"
+      key="digit1"
     >
       <BandSelector
+        key="digit1"
         label="1st Digit"
         name="digit1"
         onChange={[Function]}
@@ -1022,8 +1048,10 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="digit2"
     >
       <BandSelector
+        key="digit2"
         label="2nd Digit"
         name="digit2"
         onChange={[Function]}
@@ -1086,8 +1114,10 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="digit3"
     >
       <BandSelector
+        key="digit3"
         label="3rd Digit"
         name="digit3"
         onChange={[Function]}
@@ -1150,8 +1180,10 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="multiplier"
     >
       <BandSelector
+        key="multiplier"
         label="Multiplier"
         name="multiplier"
         onChange={[Function]}
@@ -1224,8 +1256,10 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="tolerance"
     >
       <BandSelector
+        key="tolerance"
         label="Tolerance"
         name="tolerance"
         onChange={[Function]}
@@ -1273,8 +1307,10 @@ exports[`ResistorForm should render a 6-band resistor 1`] = `
     </div>
     <div
       className="col-xs-6 col-sm-2"
+      key="tempCoef"
     >
       <BandSelector
+        key="tempCoef"
         label="Temp. Coef."
         name="tempCoef"
         onChange={[Function]}

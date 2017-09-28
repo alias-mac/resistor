@@ -7,10 +7,13 @@
  */
 
 import React from 'react';
-import { shallow, render } from 'enzyme';
+import { configure, render, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 import Resistor from 'models/Resistor';
 import ResistorForm from '../ResistorForm';
+
+configure({ adapter: new Adapter() });
 
 describe('ResistorForm', function () {
 
