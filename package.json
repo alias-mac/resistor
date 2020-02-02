@@ -56,7 +56,7 @@
     "build:client": "webpack --color --config .config/webpack.config.js -p",
     "deploy": "gh-pages -d public",
     "start": "npm-run-all -l -p -r start:*",
-    "start:server": "NODE_ENV=production nodemon index.js --watch src/",
+    "start:server": "nodemon index.js --watch src/",
     "start:client": "webpack-dev-server --color --progress --inline --hot --watch-content-base --config .config/webpack.config.js",
     "lint": "eslint .",
     "test": "jest"
